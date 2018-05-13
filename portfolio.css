@@ -1,0 +1,130 @@
+body {
+	height: 100%;
+	width: 100%;
+	font-family: 'Roboto Slab', serif;
+	background-color: #f8f8f8;
+}
+
+#logo {
+	max-width: 60px;
+	display: inline;
+}
+
+#name {
+	display: inline;
+	color: black;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.fa {
+	color: black;
+	padding-right: 20px;
+}
+
+.fa:hover {
+	color: #4CD4B0;
+}
+
+li a {
+	color: black;
+	font-size: 15px;
+}
+
+li a:hover {
+	background-color: #FFFCE6;
+	color: #4CD4B0;
+}
+
+.navbar-toggle, .icon-bar {
+    border: 1px solid black;
+}
+
+.navbar {
+	background-color: rgba(255,255,255,0.8);
+}
+
+#header {
+	padding: 50px 0;
+	text-align: center;
+	background: url("koi.jpg");
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	max-height: 650px;
+}
+
+.text-container {
+	position: relative;
+	margin: 0 auto;
+	margin-top: 15%;
+    margin-bottom: 20%;
+    background-color: rgba(255,255,255,0.6);
+    border-color: rgba(0,0,0,0.2);
+    padding: 10px;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.text-container h1 {
+	font-size: 50px;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+.text-container h3 {
+	font-family: 'Roboto Slab', serif;
+	font-weight: 300;
+}
+
+#profilepicture {
+	border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+	width: 70%;
+}
+
+#bio {
+	text-align: justify;
+	max-width: 500px;
+}
+
+#about {
+/*	max-height: 650px;*/
+	position: relative;
+	padding-top: 100px;
+}
+
+.wrapper {
+	min-height: 100%;
+	max-width: 1000px;
+	padding: 0 30px;
+	margin: 0 auto;
+	text-align: justify;
+}
+
+#portfolio {
+	max-height: 650px;
+	padding-top: 60px;
+}
+
+#contact {
+	max-height: 650px;
+	padding-top: 60px;
+	margin-bottom: 160px;
+	margin-top: 100px;
+}
+
+#contact li {
+	margin: 10px 0;
+}
+
+#copyright {
+	text-align: center;
+}
+
+@media (max-width: 640px) {
+#name {
+	display: none;
+}
+}
