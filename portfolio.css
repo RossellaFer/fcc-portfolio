@@ -124,7 +124,9 @@ li a:hover {
 }
 
 @media (max-width: 640px) {
-#name #copyright {
+#name {
 	display: none;
 }
+#copyright {
+	display: none;
 }
