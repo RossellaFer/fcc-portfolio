@@ -1,7 +1,7 @@
 body {
 	height: 100%;
 	width: 100%;
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Lato', serif;
 	background-color: #f8f8f8;
 }
 
@@ -18,6 +18,18 @@ body {
 	font-weight: 400;
 }
 
+.trans_grow {
+    background-image: linear-gradient(to left, #6c7a89, #e8ecf1);
+    background-size: 200%;
+    animation: fading_in 3s linear 1;
+    height: 1px;
+}
+
+@keyframes fading_in {
+  from {background-position: 200% 0;}  
+    to {background-position: 0 0;}
+}
+
 .fa {
 	color: black;
 	padding-right: 20px;
@@ -25,16 +37,44 @@ body {
 
 .fa:hover {
 	color: #4CD4B0;
+/*    animation: bounce 0.8s;*/
+}
+
+
+.nav > li > a:hover{
+    background-color:rgba(255,255,255,0.95);
+    cursor: pointer;
+    color: #4CD4B0;
+}
+
+/*
+@keyframes bounce {
+    0%, 20%, 60%, 100% {
+        -webkit-transform-translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -webkit-transform-translateY(-10px);
+        transform: translateY(-10px);
+    }
+    80% {
+        -webkit-transform-translateY(-6px);
+        transform: translateY(-6px);
+    }
+}
+*/
+
+.description {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100%;
 }
 
 li a {
 	color: black;
+    font-weight: 100;
 	font-size: 15px;
-}
-
-li a:hover {
-	background-color: #FFFCE6;
-	color: #4CD4B0;
 }
 
 .navbar-toggle, .icon-bar {
@@ -48,7 +88,7 @@ li a:hover {
 #header {
 	padding: 50px 0;
 	text-align: center;
-	background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),url("koi.jpg");
+	background: url("koi.jpg");
 	background-position: center;
   	background-repeat: no-repeat;
   	background-size: cover;
@@ -78,35 +118,123 @@ li a:hover {
 	font-weight: 300;
 }
 
-#profilepicture {
-	border-radius: 10px;
-    display: block;
-    margin: 0 auto;
-	width: 70%;
-}
-
-#bio {
-	text-align: justify;
-	max-width: 500px;
-}
-
 #about {
-/*	max-height: 650px;*/
 	position: relative;
 	padding-top: 100px;
+    font-size: 1.5rem;
+}
+
+#about h4 {
+    font-size: 2.3rem;
+    font-weight: bold;
 }
 
 .wrapper {
-	min-height: 100%;
-	max-width: 1000px;
-	padding: 0 30px;
+	max-width: 85%;
+/*	padding: 0 30px;*/
 	margin: 0 auto;
 	text-align: justify;
 }
 
+#profilepicture {
+	border-radius: 15px;
+    margin: 0 auto;
+	width: 40%;
+    float: left;
+    shape-margin: 1rem;
+    margin-right: 1em;
+    margin-bottom: 1rem;
+}
+
+.salutation_and_download {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2%;;
+}
+
+#download_button{
+    width: 20%;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    border-radius: 10px;
+    font-size: 1em;
+    letter-spacing: 1px;
+    box-shadow: 0 3px #4cd4b0;
+    outline: none;
+    cursor: pointer;
+    background-color: #93e5cf;
+    text-decoration: none;
+    color: black;
+}
+
+#download_button:hover {
+    top: 2px;
+    box-shadow: 0 2px #4cd4b0;
+}
+
+
+
 #portfolio {
 /*	max-height: 650px;*/
 	padding-top: 60px;
+}
+
+.portfolio_img {
+    width: 100%;
+    height: 241px;
+}
+.box {
+    background-color: dimgrey;
+}
+
+.box  {
+  width: 100%;
+  background: #000000;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    color: white;
+    height: 241px;
+    width: 95%;
+    background-color: transparent;
+    font-size: 1.1em;
+    text-shadow: 3px 3px 0 #000000;
+}
+
+.description p {
+    width: 90%;
+}
+
+div.box:hover a img {
+    opacity: 0.4;
+    filter: grayscale(100%);
+}
+
+div.box * {
+    transition: all 0.5s ease-in;
+}
+
+div.box div {
+  transform: scale(0);
+}
+
+div.box:hover div {
+  transform: scale(1);
+}
+
+.description ul {
+    text-align: left;
 }
 
 #contact {
@@ -124,11 +252,52 @@ li a:hover {
 	text-align: center;
 }
 
-@media (max-width: 640px) {
-#name {
-	display: none;
-}
-#copyright {
-	display: none;
-}
+@media (max-width: 812px) {
+    #name {
+        display: none;
+    }
+    
+    .text-container {
+        width: 95%;
+    }
+    #profilepicture {
+            width: 100%;
+        }
+    
+    #copyright {
+        display: none;
+    }
+    
+    .salutation_and_download {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .salutation_and_download span {
+        text-align: center;
+    }
+    
+    #download_button{
+        width: 50%;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 5%
+    }
+    
+    div.box:active a img {
+        opacity: 0.4;
+        filter: grayscale(100%);
+    }
+    
+    #contact {
+        text-align: center;
+    }
+    
+    #contact ul {
+        text-align: left;
+    }
+    
+    #contact ul li {
+        margin-left: 25%;
+    }
 }
