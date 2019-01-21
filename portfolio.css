@@ -1,50 +1,53 @@
 body {
-	height: 100%;
-	width: 100%;
-	font-family: 'Lato', serif;
-	background-color: #f8f8f8;
+  height: 100%;
+  width: 100%;
+  font-family: "Lato", serif;
+  background-color: #f8f8f8;
 }
 
 #logo {
-	max-width: 60px;
-	display: inline;
+  max-width: 60px;
+  display: inline;
 }
 
 #name {
-	display: inline;
-	color: black;
-	margin-left: 10px;
-	margin-top: 10px;
-	font-weight: 400;
+  display: inline;
+  color: black;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-weight: 400;
 }
 
 .trans_grow {
-    background-image: linear-gradient(to left, #6c7a89, #e8ecf1);
-    background-size: 200%;
-    animation: fading_in 3s linear 1;
-    height: 1px;
+  background-image: linear-gradient(to left, #6c7a89, #e8ecf1);
+  background-size: 200%;
+  animation: fading_in 3s linear 1;
+  height: 1px;
 }
 
 @keyframes fading_in {
-  from {background-position: 200% 0;}  
-    to {background-position: 0 0;}
+  from {
+    background-position: 200% 0;
+  }
+  to {
+    background-position: 0 0;
+  }
 }
 
-.fa {
-	color: black;
-	padding-right: 20px;
+.fab {
+  color: black;
+  padding-right: 20px;
 }
 
-.fa:hover {
-	color: #4CD4B0;
-/*    animation: bounce 0.8s;*/
+.fab:hover {
+  color: #4cd4b0;
+  /*    animation: bounce 0.8s;*/
 }
 
-
-.nav > li > a:hover{
-    background-color:rgba(255,255,255,0.95);
-    cursor: pointer;
-    color: #4CD4B0;
+.nav > li > a:hover {
+  background-color: rgba(255, 255, 255, 0.95);
+  cursor: pointer;
+  color: #4cd4b0;
 }
 
 /*
@@ -65,131 +68,130 @@ body {
 */
 
 .description {
-    background-color: black;
-    color: white;
-    width: 100%;
-    height: 100%;
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 100%;
 }
 
 li a {
-	color: black;
-    font-weight: 100;
-	font-size: 15px;
+  color: black;
+  font-weight: 100;
+  font-size: 15px;
 }
 
-.navbar-toggle, .icon-bar {
-    border: 1px solid black;
+.navbar-toggle,
+.icon-bar {
+  border: 1px solid black;
 }
 
 .navbar {
-	background-color: rgba(255,255,255,0.95);
+  background-color: rgba(255, 255, 255, 0.95);
 }
 
 #header {
-	padding: 50px 0;
-	text-align: center;
-	background: url("koi.jpg");
-	background-position: center;
-  	background-repeat: no-repeat;
-  	background-size: cover;
-  	max-height: 650px;
+  padding: 50px 0;
+  text-align: center;
+  background: url("assets/koi.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 650px;
 }
 
 .text-container {
-	position: relative;
-	margin: 0 auto;
-	margin-top: 15%;
-    margin-bottom: 20%;
-    background-color: rgba(255,255,255,0.95);
-    border-color: rgba(0,0,0,0.2);
-    padding: 10px;
-    max-width: 600px;
-    border-radius: 10px;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 15%;
+  margin-bottom: 20%;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-color: rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  max-width: 600px;
+  border-radius: 10px;
 }
 
 .text-container h1 {
-	font-size: 50px;
-	font-weight: 700;
-	letter-spacing: 1px;
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
 .text-container h3 {
-	font-family: 'Roboto Slab', serif;
-	font-weight: 300;
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
 }
 
 #about {
-	position: relative;
-	padding-top: 100px;
-    font-size: 1.5rem;
+  position: relative;
+  padding-top: 100px;
+  font-size: 1.5rem;
 }
 
 #about h4 {
-    font-size: 2.3rem;
-    font-weight: bold;
+  font-size: 2.3rem;
+  font-weight: bold;
 }
 
 .wrapper {
-	max-width: 85%;
-/*	padding: 0 30px;*/
-	margin: 0 auto;
-	text-align: justify;
+  max-width: 85%;
+  /*	padding: 0 30px;*/
+  margin: 0 auto;
+  text-align: justify;
 }
 
 #profilepicture {
-	border-radius: 15px;
-    margin: 0 auto;
-	width: 40%;
-    float: left;
-    shape-margin: 1rem;
-    margin-right: 1em;
-    margin-bottom: 1rem;
+  border-radius: 15px;
+  margin: 0 auto;
+  width: 40%;
+  float: left;
+  shape-margin: 1rem;
+  margin-right: 1em;
+  margin-bottom: 1rem;
 }
 
 .salutation_and_download {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 2%;;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2%;
 }
 
-#download_button{
-    width: 20%;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    border-radius: 10px;
-    font-size: 1em;
-    letter-spacing: 1px;
-    box-shadow: 0 3px #4cd4b0;
-    outline: none;
-    cursor: pointer;
-    background-color: #93e5cf;
-    text-decoration: none;
-    color: black;
+#download_button {
+  width: 20%;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  border-radius: 10px;
+  font-size: 1em;
+  letter-spacing: 1px;
+  box-shadow: 0 3px #4cd4b0;
+  outline: none;
+  cursor: pointer;
+  background-color: #93e5cf;
+  text-decoration: none;
+  color: black;
 }
 
 #download_button:hover {
-    top: 2px;
-    box-shadow: 0 2px #4cd4b0;
+  top: 2px;
+  box-shadow: 0 2px #4cd4b0;
 }
 
-
-
 #portfolio {
-/*	max-height: 650px;*/
-	padding-top: 60px;
+  /*	max-height: 650px;*/
+  padding-top: 60px;
 }
 
 .portfolio_img {
-    width: 100%;
-    height: 241px;
+  width: 100%;
+  height: 241px;
 }
 .box {
-    background-color: dimgrey;
+  background-color: dimgrey;
 }
 
-.box  {
+.box {
   width: 100%;
   background: #000000;
   text-align: center;
@@ -198,31 +200,31 @@ li a {
 }
 
 .description {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-    color: white;
-    height: 241px;
-    width: 95%;
-    background-color: transparent;
-    font-size: 1.1em;
-    text-shadow: 3px 3px 0 #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  color: white;
+  height: 241px;
+  width: 95%;
+  background-color: transparent;
+  font-size: 1.1em;
+  text-shadow: 3px 3px 0 #000000;
 }
 
 .description p {
-    width: 90%;
+  width: 90%;
 }
 
 div.box:hover a img {
-    opacity: 0.4;
-    filter: grayscale(100%);
+  opacity: 0.4;
+  filter: grayscale(100%);
 }
 
 div.box * {
-    transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
 }
 
 div.box div {
@@ -234,70 +236,70 @@ div.box:hover div {
 }
 
 .description ul {
-    text-align: left;
+  text-align: left;
 }
 
 #contact {
-	max-height: 650px;
-	padding-top: 60px;
-	margin-bottom: 160px;
-	margin-top: 100px;
+  max-height: 650px;
+  padding-top: 60px;
+  margin-bottom: 160px;
+  margin-top: 100px;
 }
 
 #contact li {
-	margin: 10px 0;
+  margin: 10px 0;
 }
 
 #copyright {
-	text-align: center;
+  text-align: center;
 }
 
 @media (max-width: 812px) {
-    #name {
-        display: none;
-    }
-    
-    .text-container {
-        width: 95%;
-    }
-    #profilepicture {
-            width: 100%;
-        }
-    
-    #copyright {
-        display: none;
-    }
-    
-    .salutation_and_download {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .salutation_and_download span {
-        text-align: center;
-    }
-    
-    #download_button{
-        width: 50%;
-        text-align: center;
-        padding: 10px 0;
-        margin-top: 5%
-    }
-    
-    div.box:active a img {
-        opacity: 0.4;
-        filter: grayscale(100%);
-    }
-    
-    #contact {
-        text-align: center;
-    }
-    
-    #contact ul {
-        text-align: left;
-    }
-    
-    #contact ul li {
-        margin-left: 25%;
-    }
+  #name {
+    display: none;
+  }
+
+  .text-container {
+    width: 95%;
+  }
+  #profilepicture {
+    width: 100%;
+  }
+
+  #copyright {
+    display: none;
+  }
+
+  .salutation_and_download {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .salutation_and_download span {
+    text-align: center;
+  }
+
+  #download_button {
+    width: 50%;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 5%;
+  }
+
+  div.box:active a img {
+    opacity: 0.4;
+    filter: grayscale(100%);
+  }
+
+  #contact {
+    text-align: center;
+  }
+
+  #contact ul {
+    text-align: left;
+  }
+
+  #contact ul li {
+    margin-left: 25%;
+  }
 }
