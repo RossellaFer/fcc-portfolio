@@ -34,12 +34,12 @@ body {
   }
 }
 
-a > i > .fab {
+i.fab {
   color: black;
   padding-right: 20px;
 }
 
-a > i > .fab:hover {
+i.fab:hover {
   color: #4cd4b0;
   /*    animation: bounce 0.8s;*/
 }
