@@ -34,12 +34,12 @@ body {
   }
 }
 
-.fab {
+i .fab {
   color: black;
   padding-right: 20px;
 }
 
-.fab:hover {
+i .fab:hover {
   color: #4cd4b0;
   /*    animation: bounce 0.8s;*/
 }
