@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Rossella Ferrandino | Junior Front-end Developer</title>
+    <title>Rossella Ferrandino | Front-end Developer</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -9,7 +9,7 @@
     />
     <meta
       property="og:site_name"
-      content="Rossella Ferrandino | Junior Web Developer in Tokyo"
+      content="Rossella Ferrandino | Front End Web Developer based in Tokyo"
     />
     <meta
       property="og:description"
@@ -20,12 +20,6 @@
       content="https://github.com/RossellaFer/fcc-portfolio/blob/master/preview.png?raw=true"
     />
     <meta property="og:url" content="http://http://rossellaferrandino.info" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    />
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="portfolio.css" />
     <!-- Fonts and Icons -->
     <link
@@ -36,79 +30,85 @@
       href="https://fonts.googleapis.com/css?family=Lato"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    <script
+      src="https://kit.fontawesome.com/88f56c2b29.js"
       crossorigin="anonymous"
-    />
+    ></script>
   </head>
 
   <body>
-    <nav class="navbar navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button
-            type="button"
-            class="navbar-toggle collapsed"
-            data-toggle="collapse"
-            data-target="#bs-nav-demo"
-            aria-expanded="false"
-          >
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span> <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a href="#" class="navbar-brand"
-            ><img id="logo" src="assets/glasses.png" />
-            <p id="name">Rossella Ferrandino</p></a
-          >
-        </div>
-
-        <div class="collapse navbar-collapse" id="bs-nav-demo">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Main section -->
     <header>
-      <div class="container-fluid" id="header">
-        <div class="text-container">
-          <h1>Rossella Ferrandino</h1>
-          <h3>Front End Web Developer</h3>
-          <h4>Tokyo, Japan</h4>
-          <hr class="trans_grow" />
-          <a href="https://twitter.com/ross_ferrandino" target="_blank"
-            ><i class="fab fa-2x fa-twitter"></i
-          ></a>
-          <a
-            href="https://www.linkedin.com/in/rossella-ferrandino-67601226/"
-            target="_blank"
-            ><i class="fab fa-linkedin fa-2x"></i
-          ></a>
-          <a href="https://medium.com/@rferrandino.tokyo" target="_blank"
-            ><i class="fab fa-2x fa-medium"></i
-          ></a>
-          <a href="https://github.com/RossellaFer" target="_blank"
-            ><i class="fab fa-2x fa-github"></i
-          ></a>
-          <a href="https://www.freecodecamp.org/rossellafer" target="_blank"
-            ><i class="fab fa-2x fa-free-code-camp"></i
-          ></a>
-          <a href="https://nottheusualtourists.wordpress.com/" target="_blank"
-            ><i class="fab fa-2x fa-wordpress"></i
-          ></a>
-        </div>
-      </div>
+      <a href="#">
+        <h1 class="logo">
+          <img id="logo-image" src="assets/glasses.png" />
+          <span>Rossella Ferrandino</span>
+        </h1>
+      </a>
+
+      <a
+        href="#main-menu"
+        id="main-menu-toggle"
+        class="menu-toggle"
+        aria-label="Open main menu"
+      >
+        <span class="sr-only">Open main menu</span>
+        <span class="fas fa-bars" aria-hidden="true"></span>
+      </a>
+
+      <nav id="main-menu" class="main-menu" aria-label="Main menu">
+        <a
+          href="#main-menu-toggle"
+          id="main-menu-close"
+          class="menu-close"
+          aria-label="Close main menu"
+        >
+          <span class="sr-only">Close main menu</span>
+          <span class="fas fa-times" aria-hidden="true"></span>
+        </a>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a
+        href="#main-menu-toggle"
+        class="backdrop"
+        tabindex="-1"
+        aria-hidden="true"
+        hidden
+      ></a>
     </header>
 
+    <!-- Main section -->
+    <div id="main">
+      <div class="text-container">
+        <h1>Rossella Ferrandino</h1>
+        <h3>Front End Web Developer</h3>
+        <h4>Tokyo, Japan</h4>
+        <hr class="trans_grow" />
+        <a href="https://twitter.com/ross_ferrandino" target="_blank"
+          ><i class="fab fa-2x fa-twitter"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/rossella-ferrandino-67601226/"
+          target="_blank"
+          ><i class="fab fa-linkedin fa-2x"></i
+        ></a>
+        <a href="https://medium.com/@rferrandino.tokyo" target="_blank"
+          ><i class="fab fa-2x fa-medium"></i
+        ></a>
+        <a href="https://github.com/RossellaFer" target="_blank"
+          ><i class="fab fa-2x fa-github"></i
+        ></a>
+        <a href="https://nottheusualtourists.wordpress.com/" target="_blank"
+          ><i class="fab fa-2x fa-wordpress"></i
+        ></a>
+      </div>
+    </div>
+
     <!-- About section -->
-    <div id="about" class="wrapper">
+    <section id="about" class="wrapper">
       <img
         id="profilepicture"
         class="img-responsive"
@@ -116,62 +116,62 @@
         src="assets/profilepicture.jpg"
       />
       <h4>
-        Front-end developer with professional experience in project management
-        and marketing.
+        Hi 👋 I'm Rossella
       </h4>
-      <br />
       <p>
-        My name is Rossella. I make beautiful responsive websites. I live in
-        Tokyo but I call many places home. I was born and raised in a little
-        city in Southern Italy, and as soon as I was 18, I moved to Venice to
-        study Chinese Language at University. After graduating, I moved to
-        London where I lived for 6 years and where I was first exposed to the
-        wonderful world of web development.<br />
-        <br />
-        While I was working as Membership Coordinator for one of the most
-        interesting independent cinema companies in the UK, I was involved in
-        the design of the company website, with particular attention to the user
-        experience... and I liked it so much I decided to learn how to make
-        visually appealing and functional websites!<br />
-        <br />
-        After 6 years in London, I moved with my husband to <span>Tokyo</span>,
-        where I am now looking for my fist gig as a front end web developer. I
-        am looking for an internship or a junior role in an English-speaking
-        company. I am also available for freelancing work.<br />
-        <br />
-        I love travelling and I am writing a blog where I share my travel
-        stories and my pictures of Japan. Check it out
-        <strong
-          ><a href="https://nottheusualtourists.com/" target="_blank"
+        I am a Front End developer with professional experience in project
+        management and marketing. I live in Tokyo but I call many places home. I
+        was born and raised in a little city in Southern Italy, Foggia, then I
+        moved to Venice where I got my Bachelor's and Master's Degree in Chinese
+        language. After graduating, I moved to London where I lived for 6 years
+        and worked for one of the most interesting independent cinema companies
+        in the UK,
+        <a class="about-links" target="_blank" href="https://www.everymancinema.com/"
+          >Everyman Cinema</a
+        >.
+      </p>
+        <p>
+        After 6 years in London, my husband and I moved to <span>Tokyo</span>,
+        where I am working as Front End Developer for
+        <a class="about-links" target="_blank" href="https://flagship.cc/en">Flagship</a>, a Shopify
+        dedicated e-commerce & digital marketing agency. At Flagship I am in
+        charge of turning client requirements into elegant and maintainable
+        code, customising e-commerce themes on Shopify and, in general,
+        contributing to the company's and Shopify's growth in Japan.
+      </p>
+      <p>
+        When not online, you can find me traveling around Japan and writing
+        about it on my blog. You can check out my travel stories and pictures
+<a class="about-links" href="https://nottheusualtourists.com/" target="_blank"
             >here</a
           ></strong
-        >! <br />
+        >!
       </p>
       <div class="salutation_and_download">
-        <span
-          >よろしくお願いしいます！<br />
-          Nice to meet you!</span
-        >
+        <p>
+          よろしくお願いしいます！<br />
+          Nice to meet you!
+        </p>
         <a
           id="download_button"
           target="_blank"
-          href="CV/Rossella%20Ferrandino%20-%20Web%20developer%20CV.pdf"
+          href="CV/Rossella%20Ferrandino%20-%20CV.pdf"
           download
-          >Download my resume</a
+          ><span>Download my resume</span></a
         >
       </div>
-    </div>
+    </section>
 
     <!-- Portfolio section -->
-    <div id="portfolio" class="container">
+    <section id="portfolio" class="container">
       <div class="row">
-        <div class="col-md-4 col-xs-12">
+        <div class="column">
           <div class="box">
             <a
               href="https://a-wedding-website-demo.netlify.com/"
               target="_blank"
               ><img
-                class="portfolio_img img-responsive thumbnail"
+                class="portfolio_img"
                 src="assets/wedding-website.png"
               />
               <div class="description">
@@ -186,13 +186,13 @@
             </a>
           </div>
         </div>
-        <div class="col-md-4 col-xs-12">
+        <div class="column">
           <div class="box">
             <a
               href="https://rossellafer.github.io/michelepalart-portfolio-page/"
               target="_blank"
               ><img
-                class="portfolio_img img-responsive thumbnail"
+                class="portfolio_img"
                 src="assets/michelepala.png"
               />
               <div class="description">
@@ -207,13 +207,13 @@
             </a>
           </div>
         </div>
-        <div class="col-md-4 col-xs-12">
+        <div class="column">
           <div class="box">
             <a
               href="https://rossellafer.github.io/Rock-paper-scissors/"
               target="_blank"
               ><img
-                class="portfolio_img img-responsive thumbnail"
+                class="portfolio_img"
                 src="assets/rockpaper.png"
               />
               <div class="description">
@@ -232,11 +232,11 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-4 col-xs-12">
+        <div class="column">
           <div class="box">
             <a href="https://codepen.io/RossellaF/full/pwLOER/" target="_blank"
               ><img
-                class="portfolio_img img-responsive thumbnail"
+                class="portfolio_img"
                 src="assets/quotemachine.png"
               />
               <div class="description">
@@ -255,11 +255,11 @@
             </a>
           </div>
         </div>
-        <div class="col-md-4 col-xs-12">
+        <div class="column">
           <div class="box">
             <a href="https://codepen.io/RossellaF/full/KXRKKo/" target="_blank"
               ><img
-                class="portfolio_img img-responsive thumbnail"
+                class="portfolio_img"
                 src="assets/wikipedia.png"
               />
               <div class="description">
@@ -278,11 +278,11 @@
             </a>
           </div>
         </div>
-        <div class="col-md-4 col-xs-12">
+        <div class="column">
           <div class="box">
             <a href="https://codepen.io/RossellaF/full/qXorzr/" target="_blank"
               ><img
-                class="portfolio_img img-responsive thumbnail"
+                class="portfolio_img"
                 src="assets/weather.png"
               />
               <div class="description">
@@ -302,35 +302,12 @@
           </div>
         </div>
       </div>
-      <!--
-        <div class="row">
-        <div class="col-md-4 col-xs-12">
-          <div class="box">
-            <a
-              href="http://progettobrokerferrandino.com/v2/Giuseppe%20Ferrandino.html"
-              target="_blank"
-              ><img
-                class="portfolio_img img-responsive thumbnail"
-                src="progettobroker.png"
-              />
-              <div class="description">
-                <p>Personal website for Giuseppe Ferrandino.</p>
-                <p>Stack:</p>
-                <ul>
-                  <li>Responsive layout</li>
-                  <li>Bootstrap</li>
-                </ul>
-              </div>
-            </a>
-          </div>
-        </div>
-      -->
-    </div>
+    </section>
 
-    <div id="contact" class="container">
+    <section id="contact" class="container">
       <h2>Contact</h2>
-      <div class="row">
-        <div class="col-xs-12 col-md-6">
+      <div class="row contact-section-row">
+        <div class="contact-section-column">
           <br />
           <p>Contact me for:</p>
           <ul>
@@ -342,10 +319,9 @@
             <li>Italian cooking tips</li>
           </ul>
         </div>
-        <div class="col-xs-12 col-md-6">
+        <div class="contact-section-column">
           <h3>Rossella Ferrandino</h3>
           <br />
-          <p>Phone number: +81 080 7742 9151</p>
           <p>
             Email:
             <a href="mailto: rferrandino.tokyo@gmail.com"
@@ -372,7 +348,7 @@
           ></a>
         </div>
       </div>
-    </div>
+    </section>
     <div><p id="copyright">Coded by: Rossella Ferrandino - 2018</p></div>
   </body>
 </html>
