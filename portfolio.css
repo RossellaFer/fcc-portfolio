@@ -2,7 +2,7 @@
   --dark-blue: #1b262c;
   --navy-blue: #0f4c81;
   --coral: #ed6663;
-  --orange: #ffa372;
+  --pink: #ef7a9a;
 }
 
 body {
@@ -288,7 +288,7 @@ li a {
 }
 
 .about-links:hover {
-  color: var(--orange);
+  color: var(--pink);
 }
 
 .wrapper {
@@ -329,7 +329,7 @@ li a {
   box-shadow: 0 3px var(--coral);
   outline: none;
   cursor: pointer;
-  background-color: var(--orange);
+  background-color: var(--pink);
   text-decoration: none;
   color: black;
 }
@@ -399,7 +399,7 @@ li a {
 
 #contact {
   max-height: 650px;
-  padding-top: 60px;
+  padding-top: 20px;
   margin-bottom: 160px;
   margin-top: 100px;
 }
@@ -407,7 +407,7 @@ li a {
 .contact-section-row {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 #contact li {
