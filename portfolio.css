@@ -465,8 +465,11 @@ li a {
   margin: 0 auto;
 }
 
+.contact_details a {
+  color: var(--pink);
+}
+
 .contact-section-row h3 {
-  border-bottom: 1px solid black;
   margin: 20px 0;
 }
 
