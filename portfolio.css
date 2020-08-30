@@ -60,6 +60,14 @@ section {
   margin-left: auto;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.mobile-only {
+  display: none;
+}
+
 /* Navigation */
 
 header {
@@ -118,7 +126,7 @@ header {
   box-shadow: -8px 0 8px rgba(0, 0, 0, 0.5);
   min-height: 100%;
   width: 200px;
-  background: #ffa372;
+  background: #fff;
 }
 
 .main-menu a {
@@ -127,11 +135,11 @@ header {
   line-height: 1em;
   font-size: 1em;
   text-decoration: none;
-  border-bottom: 1px solid var(--navy-blue);
+  border-bottom: 1px solid var(--dark-blue);
 }
 
 .main-menu li:first-child a {
-  border-top: 1px solid var(--navy-blue);
+  border-top: 1px solid var(--dark-blue);
 }
 
 .logo {
@@ -218,7 +226,7 @@ header {
 }
 
 .fab:hover {
-  color: #ed6663;
+  color: var(--coral);
   animation: bounce 0.8s;
 }
 
@@ -302,7 +310,7 @@ li a {
 }
 
 .about-links:hover {
-  color: var(--pink);
+  color: var(--coral);
 }
 
 .wrapper {
@@ -356,14 +364,15 @@ li a {
 
 .salutation_and_download {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
+  max-width: 50%;
 }
 
 #download_button {
   text-align: center;
-  padding: 15px 5px;
+  padding: 15px 10px;
   position: relative;
   border-radius: 10px;
   font-size: 15px;
@@ -374,6 +383,7 @@ li a {
   background-color: var(--pink);
   text-decoration: none;
   color: black;
+  margin-bottom: 2em;
 }
 
 #download_button:hover {
@@ -449,15 +459,18 @@ li a {
 .contact-section-row {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.contact-section-row h3 {
+  border-bottom: 1px solid black;
+  margin: 20px 0;
 }
 
 #contact li {
   margin: 10px 0;
-}
-
-#copyright {
-  text-align: center;
 }
 
 @media (max-width: 812px) {
@@ -468,23 +481,21 @@ li a {
     width: 100%;
   }
 
-  #copyright {
-    display: none;
+  .mobile-only {
+    display: inline;
   }
 
   .salutation_and_download {
     display: flex;
     flex-direction: column;
+    max-width: 100%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 1em 0;
   }
 
   .about_sub_section {
     flex-direction: column-reverse;
-  }
-
-  .salutation_and_download {
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    padding: 1em 0;
   }
 
   .salutation_and_download span {
@@ -498,16 +509,12 @@ li a {
     margin-top: 5%;
   }
 
-  #contact {
-    text-align: center;
-  }
-
   #contact ul {
     text-align: left;
   }
 
-  #contact ul li {
-    margin-left: 25%;
+  .contact_details {
+    width: 100%;
   }
 }
 
