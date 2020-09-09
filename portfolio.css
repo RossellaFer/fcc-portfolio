@@ -2,7 +2,7 @@
   --dark-blue: #1b262c;
   --navy-blue: #0f4c81;
   --coral: #ed6663;
-  --pink: #ef7a9a;
+  --dark-red: hsl(343.6,78.5%,35.8%);
 }
 
 body {
@@ -33,7 +33,7 @@ h4 {
 
 p {
   margin: 0 0 10px;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 a {
@@ -306,11 +306,11 @@ li a {
 }
 
 .about-links {
-  color: var(--pink);
+  color: var(--dark-red);
 }
 
 .about-links:hover {
-  color: var(--pink);
+  color: var(--coral);
 }
 
 .wrapper {
@@ -340,7 +340,7 @@ li a {
 
 .about_sub_column ul {
   list-style: none;
-  font-size: 15px;
+  font-size: 16px;
   padding-left: 0;
 }
 
@@ -358,7 +358,7 @@ li a {
 
 #skills li i {
   font-size: 112%;
-  color: var(--pink);
+  color: var(--dark-red);
   margin-right: 0.5em;
 }
 
@@ -377,10 +377,10 @@ li a {
   border-radius: 10px;
   font-size: 15px;
   letter-spacing: 1px;
-  box-shadow: 0 3px var(--coral);
+  box-shadow: 0 3px var(--dark-red);
   outline: none;
   cursor: pointer;
-  background-color: var(--pink);
+  background-color: var(--coral);
   text-decoration: none;
   color: black;
   margin-bottom: 2em;
@@ -466,7 +466,7 @@ li a {
 }
 
 .contact_details a {
-  color: var(--pink);
+  color: var(--dark-red);
 }
 
 .contact-section-row h3 {
@@ -591,11 +591,10 @@ li a {
     position: absolute;
     top: 0;
     color: white;
-    text-shadow: 3px 3px 0 #000000;
   }
 
   div.box:hover a img {
-    opacity: 0.4;
+    opacity: 0.2;
     filter: grayscale(100%);
   }
 
