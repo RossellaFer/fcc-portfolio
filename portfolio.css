@@ -340,13 +340,13 @@ li a {
 #profilepicture {
   border-radius: 15px;
   margin: 0 auto;
-  width: 30%;
   shape-margin: 1rem;
   margin-right: 1em;
   margin-bottom: 1rem;
   display: block;
   max-width: 100%;
   height: auto;
+  max-width: 300px;
 }
 
 .about_summary h4 {
@@ -523,8 +523,18 @@ li a {
   .text-container {
     width: 85%;
   }
+
   #profilepicture {
-    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .picture_and_intro {
+    flex-direction: column-reverse;
+  }
+
+  .picture_gallery {
+    flex-direction: column;
   }
 
   .mobile-only {
