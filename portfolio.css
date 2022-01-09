@@ -507,10 +507,6 @@ li a {
   margin: 0 auto;
 }
 
-.contact_details a {
-  color: var(--dark-red);
-}
-
 .contact-section-row h3 {
   margin: 20px 0;
 }
@@ -571,6 +567,13 @@ li a {
 
   .contact_details {
     width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  #profilepicture {
+    max-width: 250px;
+    margin: 0 auto;
   }
 }
 
