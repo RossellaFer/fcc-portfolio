@@ -456,7 +456,7 @@ li a {
   flex-direction: column;
 }
 
-#download_button {
+.download_button {
   border: none;
   font-size: 20px;
   min-width: 200px;
@@ -471,7 +471,7 @@ li a {
   text-align: center;
 }
 
-#download_button:before {
+.download_button:before {
   content: "";
   position: absolute;
   top: 0;
@@ -482,7 +482,7 @@ li a {
   transition: all 0.5s;
 }
 
-#download_button:after {
+.download_button:after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -493,15 +493,15 @@ li a {
   transition: all 0.5s;
 }
 
-#download_button:hover:before {
+.download_button:hover:before {
   left: 0;
 }
 
-#download_button:hover:after {
+.download_button:hover:after {
   right: 0;
 }
 
-#download_button span:before {
+.download_button span:before {
   content: "";
   position: absolute;
   top: -100%;
@@ -512,11 +512,11 @@ li a {
   transition: all 0.5s;
 }
 
-#download_button:hover span:before {
+.download_button:hover span:before {
   top: 0;
 }
 
-#download_button span:after {
+.download_button span:after {
   content: "";
   position: absolute;
   bottom: -100%;
@@ -527,8 +527,14 @@ li a {
   transition: all 0.5s;
 }
 
-#download_button:hover span:after {
+.download_button:hover span:after {
   bottom: 0;
+}
+
+#main-menu .download_button {
+  margin: auto;
+  min-width: 0;
+  color: var(--coral);
 }
 
 #portfolio {
@@ -662,6 +668,10 @@ li a {
     text-align: center;
     margin-top: 5%;
     border: 1px solid var(--coral);
+  }
+
+  #main-menu .download_button {
+    text-align: left;
   }
 
   #contact ul {
