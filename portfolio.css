@@ -71,6 +71,12 @@ section {
   display: none;
 }
 
+.text_large {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
 /* Navigation */
 
 header {
@@ -317,7 +323,7 @@ li a {
   max-width: 85%;
 }
 
-#about h4 {
+.text_large {
   font-weight: bold;
 }
 
@@ -361,7 +367,7 @@ li a {
   max-width: 300px;
 }
 
-.about_summary h4 {
+.about_summary .text_large {
   text-align: center;
   margin-bottom: 20px;
 }
@@ -464,7 +470,7 @@ li a {
   background-color: #f8f8f8;
   position: relative;
   overflow: hidden;
-  color: var(--coral);
+  color: var(--teal);
   margin: 20px auto;
   cursor: pointer;
   font-family: "Lato", serif;
@@ -536,6 +542,10 @@ li a {
 #main-menu .download_button {
   margin: auto;
   min-width: 0;
+  color: var(--teal);
+}
+
+#main-menu .download_button:hover {
   color: var(--coral);
 }
 
