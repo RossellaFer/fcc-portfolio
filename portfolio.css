@@ -11,6 +11,7 @@ body {
   height: 100%;
   width: 100%;
   font-family: "Lato", serif;
+  font-display: swap;
   background-color: #f8f8f8;
   color: var(--dark-blue);
   margin: 0;
@@ -467,6 +468,7 @@ li a {
   margin: 20px auto;
   cursor: pointer;
   font-family: "Lato", serif;
+  font-display: swap;
   padding: 10px 10px 12px 10px;
   text-align: center;
 }
