@@ -901,6 +901,10 @@ li a {
   flex-shrink: 0;
 }
 
+.portfolio_description {
+  text-align: right;
+}
+
 @media only screen and (max-width: 1280px) {
   .portfolio_container {
     align-items: center;
