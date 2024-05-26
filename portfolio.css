@@ -205,8 +205,8 @@ header {
   z-index: 1000;
 }
 
-.main-menu:target + .backdrop,
-.main-menu[aria-expanded="true"] + .backdrop {
+.main-menu:target+.backdrop,
+.main-menu[aria-expanded="true"]+.backdrop {
   position: absolute;
   display: block;
   left: 0;
@@ -220,9 +220,10 @@ header {
 }
 
 @supports (position: fixed) {
+
   .main-menu,
-  .main-menu:target + .backdrop,
-  .main-menu[aria-expanded="true"] + .backdrop {
+  .main-menu:target+.backdrop,
+  .main-menu[aria-expanded="true"]+.backdrop {
     position: fixed;
   }
 }
@@ -238,6 +239,7 @@ header {
   from {
     background-position: 200% 0;
   }
+
   to {
     background-position: 0 0;
   }
@@ -254,6 +256,7 @@ header {
 }
 
 @keyframes bounce {
+
   0%,
   20%,
   60%,
@@ -261,10 +264,12 @@ header {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
+
   40% {
     -webkit-transform: translateY(-10px);
     transform: translateY(-10px);
   }
+
   80% {
     -webkit-transform: translateY(-6px);
     transform: translateY(-6px);
@@ -402,15 +407,21 @@ li a {
 }
 
 .about_sub_section h2 {
-  text-align: left;
+  text-align: center;
   width: 100%;
   font-size: 30px;
 }
 
 #portfolio h2 {
-  text-align: right;
+  text-align: center;
   width: 100%;
   font-size: 30px;
+}
+
+.portfolio_intro {
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto 40px auto;
 }
 
 #contact h2 {
@@ -578,8 +589,8 @@ li a {
 
 .portfolio_img {
   width: 100%;
-  height: 270px;
-  object-fit: cover;
+  height: 180px;
+  object-fit: contain;
 }
 
 .box {
@@ -707,6 +718,7 @@ li a {
  Horizontal menu
 */
 @media (min-width: 768px) {
+
   .menu-toggle,
   .main-menu .menu-close {
     display: none;
@@ -735,13 +747,15 @@ li a {
 
   .main-menu a {
     color: var(--dark-blue);
-    border: 0 !important; /* Remove borders from off-canvas styling */
+    border: 0 !important;
+    /* Remove borders from off-canvas styling */
   }
 
   .main-menu a:hover,
   .main-menu a:focus {
     color: var(--coral);
-    background: none; /* Remove background from off-canvas styling */
+    background: none;
+    /* Remove background from off-canvas styling */
   }
 
   .logo span {

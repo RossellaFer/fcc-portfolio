@@ -1,745 +1,508 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <title>Rossella Ferrandino | Front-end Engineer</title>
-    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
-    <meta
-      name="keyword"
-      content="Rossella Ferrandino, portfolio, javascript, developer, shopify, react, Nama Studio"
-    />
-    <meta
-      property="og:title"
-      content="Rossella Ferrandino | Front End Engineer"
-    />
-    <meta
-      property="og:description"
-      content="Front-End engineer with customer focused entrepreneurial experience"
-    />
-    <meta
-      property="og:image"
-      content="https://github.com/RossellaFer/fcc-portfolio/blob/master/preview.png?raw=true"
-    />
-    <meta property="og:url" content="http://rossellaferrandino.info" />
-    <meta property="og:type" content="website" />
-    <meta
-      name="description"
-      content="Front-End Engineer with customer focused entrepreneurial experience"
-    />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Rossella Ferrandino" />
-    <meta
-      name="twitter:description"
-      content="Front-End Engineer with customer focused entrepreneurial experience"
-    />
-    <meta
-      name="twitter:image"
-      content="https://github.com/RossellaFer/fcc-portfolio/blob/master/preview.png?raw=true"
-    />
-    <link rel="stylesheet" type="text/css" href="portfolio.css?8" />
-    <!-- Fonts and Icons -->
-    <link
-      defer
-      href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700"
-      rel="stylesheet"
-    />
-    <link
-      defer
-      href="https://fonts.googleapis.com/css?family=Lato"
-      rel="stylesheet"
-    />
-    <script
-      defer
-      src="https://kit.fontawesome.com/88f56c2b29.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
 
-  <body>
-    <header>
-      <a href="/index.html">
-        <h1 class="logo">
-          <img
-            alt="Logo image"
-            width="50"
-            height="50"
-            id="logo-image"
-            src="assets/RF_logo_black_2.svg"
-          />
-          <span>Rossella Ferrandino</span>
-        </h1>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Rossella Ferrandino | Front-end Engineer</title>
+  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+  <meta name="keyword" content="Rossella Ferrandino, portfolio, javascript, developer, shopify, react, Nama Studio" />
+  <meta property="og:title" content="Rossella Ferrandino | Front End Engineer" />
+  <meta property="og:description" content="Front-End engineer with customer focused entrepreneurial experience" />
+  <meta property="og:image" content="https://github.com/RossellaFer/fcc-portfolio/blob/master/preview.png?raw=true" />
+  <meta property="og:url" content="http://rossellaferrandino.info" />
+  <meta property="og:type" content="website" />
+  <meta name="description" content="Front-End Engineer with customer focused entrepreneurial experience" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Rossella Ferrandino" />
+  <meta name="twitter:description" content="Front-End Engineer with customer focused entrepreneurial experience" />
+  <meta name="twitter:image" content="https://github.com/RossellaFer/fcc-portfolio/blob/master/preview.png?raw=true" />
+  <link rel="stylesheet" type="text/css" href="portfolio.css?8" />
+  <!-- Fonts and Icons -->
+  <link defer href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet" />
+  <link defer href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
+  <script defer src="https://kit.fontawesome.com/88f56c2b29.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <a href="/index.html">
+      <h1 class="logo">
+        <img alt="Logo image" width="50" height="50" id="logo-image" src="assets/RF_logo_black_2.svg" />
+        <span>Rossella Ferrandino</span>
+      </h1>
+    </a>
+
+    <a href="#main-menu" id="main-menu-toggle" class="menu-toggle" aria-label="Open main menu">
+      <span class="sr-only">Open main menu</span>
+      <span class="fas fa-bars" aria-hidden="true"></span>
+    </a>
+
+    <nav id="main-menu" class="main-menu" aria-label="Main menu">
+      <a href="#main-menu-toggle" id="main-menu-close" class="menu-close" aria-label="Close main menu">
+        <span class="sr-only">Close main menu</span>
+        <span class="fas fa-times" aria-hidden="true"></span>
       </a>
-
-      <a
-        href="#main-menu"
-        id="main-menu-toggle"
-        class="menu-toggle"
-        aria-label="Open main menu"
-      >
-        <span class="sr-only">Open main menu</span>
-        <span class="fas fa-bars" aria-hidden="true"></span>
-      </a>
-
-      <nav id="main-menu" class="main-menu" aria-label="Main menu">
-        <a
-          href="#main-menu-toggle"
-          id="main-menu-close"
-          class="menu-close"
-          aria-label="Close main menu"
-        >
-          <span class="sr-only">Close main menu</span>
-          <span class="fas fa-times" aria-hidden="true"></span>
-        </a>
-        <ul>
-          <li class="mobile-only"><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a
-            class="download_button"
-            target="_blank"
-            href="CV/Rossella Ferrandino resume.pdf"
-          >Resume<span></span>
+      <ul>
+        <li class="mobile-only"><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a class="download_button" target="_blank"
+            href="CV/Rossella Ferrandino - Software Engineer.pdf">Resume<span></span>
           </a></li>
-        </ul>
-      </nav>
-      <a
-        href="#main-menu-toggle"
-        class="backdrop"
-        tabindex="-1"
-        aria-hidden="true"
-        hidden
-      ></a>
-    </header>
+      </ul>
+    </nav>
+    <a href="#main-menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>
+  </header>
 
-    <!-- Main section -->
-    <div id="main">
-      <div class="text-container">
-        <h1>Rossella Ferrandino</h1>
-        <h2>Front-end Engineer</h2>
-        <hr class="trans_grow" />
-        <a
-          href="https://github.com/RossellaFer"
-          target="_blank"
-          aria-label="Github"
-          rel="noopener"
-          ><i class="fab fa-2x fa-github"></i
-        ></a>
-        <a
-          href="https://dev.to/rossellafer"
-          target="_blank"
-          aria-label="Dev"
-          rel="noopener"
-          ><i class="fab fa-2x fa-dev"></i
-        ></a>
-        <a
-          href="https://medium.com/@rferrandino.tokyo"
-          target="_blank"
-          aria-label="Medium"
-          rel="noopener"
-          ><i class="fab fa-2x fa-medium"></i
-        ></a>
-        <a
-          href="https://www.linkedin.com/in/rossella-ferrandino"
-          target="_blank"
-          aria-label="LinkedIn"
-          rel="noopener"
-          ><i class="fab fa-linkedin fa-2x"></i
-        ></a>
-        <a
-          href="https://www.behance.net/rossellferrand"
-          target="_blank"
-          aria-label="Twitter"
-          rel="noopener"
-          ><i class="fab fa-2x fa-behance"></i
-        ></a>
-        <a
-          href="https://twitter.com/ross_ferrandino"
-          target="_blank"
-          aria-label="Twitter"
-          rel="noopener"
-          ><i class="fab fa-2x fa-twitter"></i
-        ></a>
-      </div>
+  <!-- Main section -->
+  <div id="main">
+    <div class="text-container">
+      <h1>Rossella Ferrandino</h1>
+      <h2>Front-end Engineer</h2>
+      <hr class="trans_grow" />
+      <a href="https://github.com/RossellaFer" target="_blank" aria-label="Github" rel="noopener"><i
+          class="fab fa-2x fa-github"></i></a>
+      <a href="https://dev.to/rossellafer" target="_blank" aria-label="Dev" rel="noopener"><i
+          class="fab fa-2x fa-dev"></i></a>
+      <a href="https://medium.com/@rferrandino.tokyo" target="_blank" aria-label="Medium" rel="noopener"><i
+          class="fab fa-2x fa-medium"></i></a>
+      <a href="https://www.linkedin.com/in/rossella-ferrandino" target="_blank" aria-label="LinkedIn" rel="noopener"><i
+          class="fab fa-linkedin fa-2x"></i></a>
+      <a href="https://www.behance.net/rossellferrand" target="_blank" aria-label="Twitter" rel="noopener"><i
+          class="fab fa-2x fa-behance"></i></a>
+      <a href="https://twitter.com/ross_ferrandino" target="_blank" aria-label="Twitter" rel="noopener"><i
+          class="fab fa-2x fa-twitter"></i></a>
     </div>
+  </div>
 
-    <div class="shell">
-      <!-- About section -->
-      <section id="about" class="wrapper">
-        <div class="picture_and_intro">
-          <div class="picture_container">
-            <img
-              id="profilepicture"
-              class="img-responsive"
-              alt="profile picture"
-              width="300"
-              height="300"
-              src="assets/nama_studio_ross_2023.jpeg"
-            />
-          </div>
-          <div class="about_block">
-            <p class="text_large">Hi 👋 I'm Rossella</p>
-            <p>
-              I’m a Co-owner and Technical Lead at
-              <a class="link" target="_blank" href="https://www.namastudio.it/en"
-                >Nama Studio</a
-              >, Milano.
-            </p>
-            <p>
-              I’ve always admired how technology has the power to change our
-              world. I use my problem solving skills and my technical knowledge
-              to tackle problems that are meaningful to me and to society.
-            </p>
-            <p>
-              Whether it’s through empowering
-              <span class="highlight">sustainable businesses</span> to sell
-              their products online or sharing knowledge and building a
-              supporting community, I love working on projects that have an
-              <span class="highlight">impact on society</span>.
-            </p>
-            <p>
-              I specialize in Shopify theme development, UX design and technical
-              writing. I am also an active member of the non-profit organization
-              <a
-                class="link"
-                target="_blank"
-                href="https://www.womenwhocode.com/"
-                >Women Who Code</a
-              >.
-            </p>
-          </div>
+  <div class="shell">
+    <!-- About section -->
+    <section id="about" class="wrapper">
+      <div class="picture_and_intro">
+        <div class="picture_container">
+          <img id="profilepicture" class="img-responsive" alt="profile picture" width="300" height="300"
+            src="assets/nama_studio_ross_2023.jpeg" />
         </div>
-        <div class="about_block about_summary">
-          <p class="text_large">A quick summary of my career</p>
+        <div class="about_block">
+          <p class="text_large">Hi 👋 I'm Rossella</p>
           <p>
-            Even though I was fairly good at math as a kid, I never thought a
-            career in software engineering would be something I could pursue or
-            I would be interested in. I decided to study Chinese language
-            instead, first in Venice and then at SOAS University of London.
+            I’m a Software Engineer and Co-Owner at
+            <a class="link" target="_blank" href="https://www.namastudio.it/en">Nama Studio</a>, Milano.
           </p>
           <p>
-            While in London, I started working for one of the most interesting
-            independent cinema companies in the UK,
-            <a
-              class="link"
-              target="_blank"
-              href="https://www.everymancinema.com/"
-              >Everyman Cinema</a
-            >. What started as a hospitality job turned into a career in
-            marketing and customer retention, as I was in charge of the loyalty
-            program for the cinema chain.
+            I’ve always admired how technology has the power to change our
+            world. I use my problem solving skills and my technical knowledge
+            to tackle problems that are meaningful to me and to society.
           </p>
           <p>
-            Working with the team of developers and designers to completely
-            re-imagine the UX for the paid subscribers and launch the new
-            membership scheme, made me want to learn more about web development.
+            Whether it’s through empowering
+            <span class="highlight">sustainable businesses</span> to sell
+            their products online or sharing knowledge and building a
+            supporting community, I love working on projects that have an
+            <span class="highlight">impact on society</span>.
           </p>
           <p>
-            I started spending my evenings going through the FreeCodeCamp
-            tutorials and attending events organised by
-            <a class="link" target="_blank" href="https://codebar.io"
-              >Codebar</a
-            >
-            and Women Who Code, non-profit organisations where people
-            volunteered to teach coding.
-          </p>
-          <p>
-            In 2018, my husband and I moved to Tokyo, where I decided to focus
-            on becoming a developer. I worked at
-            <a class="link" target="_blank" href="https://flagship.cc/en"
-              >Flagship LLC</a
-            >, the first Shopify Plus partner in Japan, where I focused on
-            customising e-commerce stores on
-            <span class="highlight">Shopify</span> and coding ad-hoc features to
-            fit the clients’ business strategies. I learned a lot from my
-            colleagues at Flagship and from the Japan tech community, especially
-            the Women Who Code Tokyo chapter where I volunteered for a while.
-          </p>
-          <p>
-            At Flagship, I met Silvia and Lavinia. They founded Nama Studio, a
-            boutique e-commerce agency that builds solutions for sustainable brands in Italy. In 2021, I joined
-            <a class="link" target="_blank" href="https://namastudio.it/"
-              >Nama Studio</a
-            >
-            as a Partner and Technical Lead. We dedicate half of our work
-            capacity to projects that are inclusive, eco-friendly and supportive
-            of diversity. At Nama I focus on translating into code the clients’
-            business requirements and on designing simple and clear UX
-            e-commerce websites.
+            I specialize in Shopify theme development, UX design and technical
+            writing. For many years I was an active member of the non-profit organization
+            <a class="link" target="_blank" href="https://www.womenwhocode.com/">Women Who Code</a>. Since the closing
+            of Women Who Code, I have been helping out the Tokyo-based <a lass="link" target="_blank"
+              href="https://womeninsoftware.jp/">Women in Software Engineering Japan</a>.
           </p>
         </div>
-        <div class="about_block about_summary">
-          <p>
-            Besides my job, I enjoy writing - both <a href="/blog.html" 
-            class="link">technical</a> blog posts about
-            what I am learning and <a
-            class="link"
-            href="https://nottheusualtourists.com/"
-            target="_blank"
-            >travel</a
-            > blog articles about my trips across
-            the world. 
-            <br> 
-          </p>
-        </div>
-        <ul class="picture_gallery">
-          <li>
-            <img src="assets/flagship_team.jpg" alt="Team at Flagship LLC" />
-          </li>
-          <li>
-            <img src="assets/nama_team.jpg" alt="Team at Nama Studio" />
-          </li>
-          <li>
-            <img
-              src="assets/fushimi_inari_taisha.jpeg"
-              alt="Rossella at Fushimi Inari Taisha"
-            />
-          </li>
-        </ul>
+      </div>
+      <div class="about_block about_summary">
+        <p class="text_large">A quick summary of my career</p>
+        <p>
+          Even though I was fairly good at math as a kid, I never thought a
+          career in software engineering would be something I could pursue or
+          I would be interested in. I decided to study Chinese language
+          instead, first in Venice and then at <a class="link" target="_blank" href="https://www.soas.ac.uk/">SOAS
+            University of London</a>.
+        </p>
+        <p>
+          While in London, I started working for one of the most interesting
+          independent cinema companies in the UK,
+          <a class="link" target="_blank" href="https://www.everymancinema.com/">Everyman Cinema</a>. What started as a
+          hospitality job turned into a career in
+          marketing and customer retention, as I was in charge of the loyalty
+          program for the cinema chain.
+        </p>
+        <p>
+          Working with the team of developers and designers to completely
+          re-imagine the UX for the paid subscribers and launch the new
+          membership scheme, made me want to learn more about web development.
+        </p>
+        <p>
+          I started spending my evenings going through the FreeCodeCamp
+          tutorials and attending events organised by
+          <a class="link" target="_blank" href="https://codebar.io">Codebar</a>
+          and Women Who Code, non-profit organisations where people
+          volunteered to teach coding.
+        </p>
+        <p>
+          In 2018, my husband and I moved to Tokyo, where I decided to focus
+          on becoming a developer. I worked at
+          <a class="link" target="_blank" href="https://flagship.cc/en">Flagship LLC</a>, the first Shopify Plus partner
+          in Japan, where I focused on
+          customising e-commerce stores on
+          <span class="highlight">Shopify</span> and coding ad-hoc features to
+          fit the clients’ business strategies. I learned a lot from my
+          colleagues at Flagship and from the Japan tech community, especially
+          the Women Who Code Tokyo chapter where I volunteered for a while.
+        </p>
+        <p>
+          At Flagship, I met Silvia and Lavinia. They founded Nama Studio, a
+          boutique e-commerce agency that builds solutions for sustainable brands in Italy. In 2021, I joined
+          <a class="link" target="_blank" href="https://namastudio.it/">Nama Studio</a>
+          as a Partner and Technical Lead. We dedicate half of our work
+          capacity to projects that are inclusive, eco-friendly and supportive
+          of diversity. At Nama I focus on translating into code the clients’
+          business requirements and on designing simple and clear UX
+          e-commerce websites.
+        </p>
+      </div>
+      <div class="about_block about_summary">
+        <p>
+          Besides my job, I enjoy writing - both <a href="/blog.html" class="link">technical</a> blog posts about
+          what I am learning and <a class="link" href="https://nottheusualtourists.com/" target="_blank">travel</a> blog
+          articles about my trips across
+          the world.
+          <br>
+        </p>
+      </div>
+      <ul class="picture_gallery">
+        <li>
+          <img src="assets/flagship_team.jpg" alt="Team at Flagship LLC" />
+        </li>
+        <li>
+          <img src="assets/nama_team.jpg" alt="Team at Nama Studio" />
+        </li>
+        <li>
+          <img src="assets/fushimi_inari_taisha.jpeg" alt="Rossella at Fushimi Inari Taisha" />
+        </li>
+      </ul>
 
-        <div class="about_sub_section">
-          <h2>Expertise</h2>
-          <div class="expertise">
-            <div class="about_sub_column">
-              <h3>Front-end</h3>
-              <ul id="skills">
-                <li><i class="fas fa-code"></i>Shopify</li>
-                <li><i class="fas fa-code"></i>JavaScript</li>
-                <li><i class="fas fa-code"></i>CSS/SCSS</li>
-                <li><i class="fas fa-code"></i>React</li>
-                <li><i class="fas fa-code"></i>Responsive design</li>
-                <li><i class="fas fa-code"></i>E-commerce</li>
-                <li><i class="fas fa-code"></i>SEO</li>
-                <li><i class="fas fa-code"></i>Amazon Web Services (AWS)</li>
-                <li><i class="fas fa-code"></i>Node.js</li>
-              </ul>
-            </div>
-            <div class="about_sub_column">
-              <h3>UX / UI</h3>
-              <ul id="skills">
-                <li>
-                  <i class="fa fa-pencil"></i>Design user-centered interfaces
-                </li>
-                <li><i class="fa fa-pencil"></i>Wireframing</li>
-                <li><i class="fa fa-pencil"></i>Prototyping</li>
-                <li><i class="fa fa-pencil"></i>Responsive design</li>
-                <li><i class="fa fa-pencil"></i>User research</li>
-                <li><i class="fa fa-pencil"></i>Usability testing</li>
-              </ul>
-            </div>
-            <div class="about_sub_column">
-              <h3>And more</h3>
-              <p>
-                I have skills in other fields such as technical writing and
-                e-commerce optimization. <br />I also have experience in
-                delivering technical workshops and presentations on Shopify
-                theme development.
-              </p>
-              <div class="salutation_and_download">
-                <a
-                  class="download_button"
-                  target="_blank"
-                  href="CV/Rossella Ferrandino resume.pdf"
-                >
-                  Download my resume<span></span>
-                </a>
-                <p>よろしくお願いしいます！<br />Nice to meet you!</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="portfolio" class="wrapper">
-        <h2>My work</h2>
-        <div class="portfolio_container">
-          <!--portfolio_box-->
-          <div class="portfolio_box">
-            <h3 class="portfolio_box_title">Shopify custom theme</h3>
-            <a
-              href="https://nama-dev-2023.myshopify.com/"
-              target="_blank"
-            >
-              <img
-                class="portfolio_img"
-                alt="Preview image - Nama custom theme"
-                src="assets/Nama custom theme.png"
-              />
-            </a>
-            <div class="portfolio_box_description">
-              <div class="portfolio_tags">
-                <p class="portfolio_tag">Shopify</p>
-                <p class="portfolio_tag">Nama Studio</p>
-                <p class="portfolio_tag">E-commerce</p>
-              </div>
-              <p>
-                Custom Shopify theme for internal use, focus on the fashion industry. The store is password-protected, password is "namastudio".
-              </p>
-              <p>Stack:</p>
-              <ul>
-                <li>Liquid templating language</li>
-                <li>JavaScript</li>
-                <li>CSS</li>
-              </ul>
-              <a
-                href="https://medium.com/@rferrandino.tokyo/how-building-a-shopify-theme-helped-me-grow-as-a-developer-c769f0f6c349"
-                target="_blank"
-                class="link"
-                >Read about process and lessons learned</a
-              >
-            </div>
-            <!--portfolio_box_description-->
-          </div>
-          <!--portfolio_box-->
-          <div class="portfolio_box">
-            <h3 class="portfolio_box_title">Recipe box</h3>
-            <a
-              href="https://rossellafer.github.io/recipe-box/"
-              target="_blank"
-            >
-              <img
-                class="portfolio_img"
-                alt="Preview image - Recipe box"
-                src="assets/Recipe box.png"
-              />
-            </a>
-            <div class="portfolio_box_description">
-              <div class="portfolio_tags">
-                <p class="portfolio_tag">Web development</p>
-                <p class="portfolio_tag">Personal project</p>
-              </div>
-              <p>
-                Simple CRUD application for recipes, using local storage to save and retrieve data
-
-              </p>
-              <p>Stack:</p>
-              <ul>
-                <li>React</li>
-                <li>Tailwind</li>
-                <li>Data persistence with local storage</li>
-              </ul>
-              <a
-                href="https://github.com/RossellaFer/recipe-box"
-                target="_blank"
-                class="link"
-                >Github repo</a
-              >
-            </div>
-            <!--portfolio_box_description-->
-          </div>
-          <div class="portfolio_box">
-            <h3 class="portfolio_box_title">Local Volunteer app & website</h3>
-            <a
-              href="https://www.behance.net/gallery/154461311/Local-Volunteer"
-              target="_blank"
-            >
-              <img
-                class="portfolio_img"
-                alt="Preview image - Local Volunteer UX design"
-                src="assets/behance_local_volunteer.png"
-              />
-            </a>
-            <div class="portfolio_box_description">
-              <div class="portfolio_tags">
-                <p class="portfolio_tag">UX design</p>
-                <p class="portfolio_tag">Mockup</p>
-              </div>
-              <p>
-                UX design for mobile app & responsive website for a fictional
-                service that helps people find volunteering opportunities in
-                their local area. This project is part of the Google UX design
-                professional certificate.
-              </p>
-              <p>Stack:</p>
-              <ul>
-                <li>Figma</li>
-                <li>App design</li>
-                <li>User research, competitive analysis</li>
-              </ul>
-              <a
-                href="https://www.behance.net/gallery/154461311/Local-Volunteer"
-                target="_blank"
-                class="link"
-                >Go to case study</a
-              >
-            </div>
-            <!--portfolio_box_description-->
-          </div>
-          <!--portfolio_box-->
-          <div class="portfolio_box">
-            <h3 class="portfolio_box_title">Find a mentor</h3>
-            <a
-              href="https://www.behance.net/gallery/150733397/Mentor-request-flow-for-a-coding-bootcamp"
-              target="_blank"
-            >
-              <img
-                class="portfolio_img"
-                alt="Preview image - Find a mentor UX design"
-                src="assets/behance_find_a_mentor.png"
-              />
-            </a>
-            <div class="portfolio_box_description">
-              <div class="portfolio_tags">
-                <p class="portfolio_tag">UX design</p>
-                <p class="portfolio_tag">Mockup</p>
-              </div>
-              <p>
-                UX design from concept to delivery of mentor request flow for
-                fictional a tech bootcamp. This project is part of the Google UX
-                design professional certificate.
-              </p>
-              <p>Stack:</p>
-              <ul>
-                <li>Adobe XD</li>
-                <li>Responsive design based on user research</li>
-                <li>Usability testing</li>
-              </ul>
-              <a
-                href="https://www.behance.net/gallery/150733397/Mentor-request-flow-for-a-coding-bootcamp"
-                target="_blank"
-                class="link"
-                >Go to case study</a
-              >
-            </div>
-            <!--portfolio_box_description-->
-          </div>
-          <!--portfolio_box-->
-          <div class="portfolio_box">
-            <h3 class="portfolio_box_title">Enoteca omnichannel app</h3>
-            <a
-              href="https://www.behance.net/gallery/149111121/Enoteca-wine-shop-app"
-              target="_blank"
-            >
-              <img
-                class="portfolio_img"
-                alt="Preview image - Enoteca UX design"
-                src="assets/behance_enoteca.png"
-              />
-            </a>
-            <div class="portfolio_box_description">
-              <div class="portfolio_tags">
-                <p class="portfolio_tag">UX design</p>
-                <p class="portfolio_tag">Mockup</p>
-              </div>
-              <p>
-                UX design for omnichannel app for a fictional boutique retailer
-                of wine and spirits. This project is part of the Google UX
-                design professional certificate.
-              </p>
-              <p>Stack:</p>
-              <ul>
-                <li>Figma</li>
-                <li>App design</li>
-                <li>User research, competitive analysis</li>
-              </ul>
-              <a
-                href="https://www.behance.net/gallery/149111121/Enoteca-wine-shop-app"
-                target="_blank"
-                class="link"
-                >Go to case study</a
-              >
-            </div>
-            <!--portfolio_box_description-->
-          </div>
-          <!--portfolio_box-->
-          <div class="portfolio_box">
-            <h3 class="portfolio_box_title">Wedding website</h3>
-            <a
-              href="https://a-wedding-website-demo.netlify.com/"
-              target="_blank"
-            >
-              <img
-                class="portfolio_img"
-                alt="Preview image - wedding website"
-                src="assets/wedding-website.jpg"
-              />
-            </a>
-            <div class="portfolio_box_description">
-              <div class="portfolio_tags">
-                <p class="portfolio_tag">Web development</p>
-                <p class="portfolio_tag">Personal project</p>
-              </div>
-              <p>
-                ReactJS web app to manage the RSVPs to my wedding.<br />I also
-                wrote some
-                <a
-                  href="https://medium.com/@rferrandino.tokyo/a-wedding-website-in-reactjs-9b05f112e56d"
-                  target="_blank"
-                  class="link"
-                  >technical articles</a
-                >
-                on this project.
-              </p>
-              <p>Stack:</p>
-              <ul>
-                <li>Data persistance with Firebase</li>
-                <li>i18n - Italian and English</li>
-                <li>Google maps integration</li>
-              </ul>
-              <a
-                href="https://a-wedding-website-demo.netlify.com/"
-                target="_blank"
-                class="link"
-                >Go to demo website</a
-              >
-            </div>
-            <!--portfolio_box_description-->
-          </div>
-          <!--portfolio_box-->
-          <div class="portfolio_box">
-            <h3 class="portfolio_box_title">Rifò Lab</h3>
-            <a href="https://rifo-lab.com/" target="_blank">
-              <img
-                class="portfolio_img"
-                alt="Preview image - Rifo Lab"
-                src="assets/Rifo_screenshot.png"
-              />
-            </a>
-            <div class="portfolio_box_description">
-              <div class="portfolio_tags">
-                <p class="portfolio_tag">Shopify</p>
-                <p class="portfolio_tag">Nama Studio</p>
-                <p class="portfolio_tag">Agency work</p>
-              </div>
-              <p>
-                With my agency Nama Studio, I migrated Rifo's website from
-                WooCommerce to Shopify, creating a custom theme and providing
-                support on new functions and implementations through their first
-                year on Shopify (2019).
-                <br />Design brief provided by the client.
-              </p>
-              <p>Stack:</p>
-              <ul>
-                <li>Liquid</li>
-                <li>JavaScript</li>
-              </ul>
-              <a href="https://rifo-lab.com/" target="_blank" class="link"
-                >Go to store</a
-              >
-            </div>
-            <!--portfolio_box_description-->
-          </div>
-          <!--portfolio_box-->
-          <div class="portfolio_box">
-            <h3 class="portfolio_box_title">Bontasana</h3>
-            <a href="https://bontasana.com/" target="_blank">
-              <img
-                class="portfolio_img"
-                alt="Preview image - Bontasana"
-                src="assets/Bontasana_screenshot.png"
-              />
-            </a>
-            <div class="portfolio_box_description">
-              <div class="portfolio_tags">
-                <p class="portfolio_tag">Shopify</p>
-                <p class="portfolio_tag">Nama Studio</p>
-                <p class="portfolio_tag">Agency work</p>
-              </div>
-              <p>
-                With my agency Nama Studio, I have developed Bontasana's website
-                starting from a Shopify theme and working on functional and
-                graphic changes. The store is multi-language and it is enriched
-                by a collection of vegan recipes. We keep supporting them in
-                developing new features.
-                <br />Design brief provided by the client.
-              </p>
-              <p>Stack:</p>
-              <ul>
-                <li>Liquid</li>
-                <li>JavaScript</li>
-                <li>Paywhirl subscriptions</li>
-              </ul>
-              <a href="https://bontasana.com/" target="_blank" class="link"
-                >Go to store</a
-              >
-            </div>
-            <!--portfolio_box_description-->
-          </div>
-          <!--portfolio_box-->
-        </div>
-        <!--portfolio_container-->
-      </section>
-      <!-- Portfolio section -->
-
-      <section id="contact" class="container">
-        <h2 class="text-center">Contact</h2>
-        <div class="row contact-section-row">
-          <div class="contact-section-column">
-            <p>You can reach out for:</p>
-            <ul>
-              <li>Job opportunities (remote or Japan-based)</li>
-              <li>Travel ideas</li>
-              <li>Mentorship</li>
-              <li>Chat about code</li>
-              <li>Tech articles ideas and requests</li>
-              <li>Advice on visiting Japan</li>
-              <li>Italian cooking tips</li>
+      <div class="about_sub_section">
+        <h2>Expertise</h2>
+        <div class="expertise">
+          <div class="about_sub_column">
+            <h3>Engineering</h3>
+            <ul id="skills">
+              <li><i class="fas fa-code"></i>JavaScript</li>
+              <li><i class="fas fa-code"></i>React</li>
+              <li><i class="fas fa-code"></i>TypeScript</li>
+              <li><i class="fas fa-code"></i>Tailwind</li>
+              <li><i class="fas fa-code"></i>GraphQL</li>
+              <li><i class="fas fa-code"></i>Node.js</li>
+              <li><i class="fas fa-code"></i>SEO</li>
             </ul>
           </div>
-          <div class="contact-section-column contact_details">
-            <h3>Contact me directly</h3>
-            <p>Rossella Ferrandino</p>
-            <p>Looking to relocate to <strong>Tokyo, Japan</strong></p>
+          <div class="about_sub_column">
+            <h3>UX / UI</h3>
+            <ul id="skills">
+              <li>
+                <i class="fa fa-pencil"></i>Design user-centered interfaces
+              </li>
+              <li><i class="fa fa-pencil"></i>Wireframing</li>
+              <li><i class="fa fa-pencil"></i>Prototyping</li>
+              <li><i class="fa fa-pencil"></i>Responsive design</li>
+              <li><i class="fa fa-pencil"></i>User research</li>
+              <li><i class="fa fa-pencil"></i>Usability testing</li>
+              <li><i class="fa fa-pencil"></i>E-commerce specific UX</li>
+            </ul>
+          </div>
+          <div class="about_sub_column">
+            <h3>And more</h3>
             <p>
-              Drop me an
-              <a
-                href="mailto: ross.ferrandino@gmail.com"
-                aria-label="Email"
-                class="link"
-                >email</a
-              >
+              I have skills in other fields such as technical writing and
+              e-commerce optimization. <br />I also have experience in
+              delivering technical workshops and presentations on Shopify
+              theme development.
             </p>
-            <h3>Find me online</h3>
-            <a
-              href="https://github.com/RossellaFer"
-              target="_blank"
-              aria-label="Github"
-              rel="noopener"
-              ><i class="icons fab fa-2x fa-github"></i
-            ></a>
-            <a
-              href="https://dev.to/rossellafer"
-              target="_blank"
-              aria-label="Dev"
-              rel="noopener"
-              ><i class="fab fa-2x fa-dev"></i
-            ></a>
-            <a
-              href="https://medium.com/@rferrandino.tokyo"
-              target="_blank"
-              aria-label="Medium"
-              rel="noopener"
-              ><i class="fab fa-2x fa-medium"></i
-            ></a>
-            <a
-              href="https://www.linkedin.com/in/rossella-ferrandino-67601226/"
-              target="_blank"
-              aria-label="LinkedIn"
-              rel="noopener"
-              ><i class="icons fab fa-linkedin fa-2x"></i
-            ></a>
-            <a
-              href="https://www.behance.net/rossellferrand"
-              target="_blank"
-              aria-label="Twitter"
-              rel="noopener"
-              ><i class="fab fa-2x fa-behance"></i
-            ></a>
-            <a
-              href="https://twitter.com/ross_ferrandino"
-              target="_blank"
-              aria-label="Twitter"
-              rel="noopener"
-              ><i class="icons fab fa-2x fa-twitter"></i
-            ></a>
+            <div class="salutation_and_download">
+              <a class="download_button" target="_blank" href="CV/Rossella Ferrandino resume.pdf">
+                Download my resume<span></span>
+              </a>
+              <p>よろしくお願いしいます！<br />Nice to meet you!</p>
+            </div>
           </div>
         </div>
-      </section>
-    </div>
-  </body>
+      </div>
+    </section>
+
+    <section id="portfolio" class="wrapper">
+      <h2>My work</h2>
+      <p class="portfolio_intro">This is a collection of personal projects and open source contributions. <br> To view
+        the professional Shopify
+        projects I develop at Nama Studio, visit the agency's <a class="link" target="_blank"
+          href="https://namastudio.it/en/pages/portfolio">portfolio</a>.</p>
+      <div class="portfolio_container">
+        <!--portfolio_box-->
+        <div class="portfolio_box">
+          <h3 class="portfolio_box_title">Shopify custom theme</h3>
+          <a href="https://nama-dev-2023.myshopify.com/" target="_blank">
+            <img class="portfolio_img" alt="Preview image - Nama custom theme" src="assets/Nama theme.png" />
+          </a>
+          <div class="portfolio_box_description">
+            <div class="portfolio_tags">
+              <p class="portfolio_tag">Shopify</p>
+              <p class="portfolio_tag">Nama Studio</p>
+              <p class="portfolio_tag">E-commerce</p>
+            </div>
+            <p>
+              Custom Shopify theme for internal use, focus on the fashion industry. The store is password-protected,
+              password is "namastudio".
+            </p>
+            <p>Stack:</p>
+            <ul>
+              <li>Liquid templating language</li>
+              <li>JavaScript</li>
+              <li>CSS</li>
+            </ul>
+            <a href="https://medium.com/@rferrandino.tokyo/how-building-a-shopify-theme-helped-me-grow-as-a-developer-c769f0f6c349"
+              target="_blank" class="link">Read about process and lessons learned</a>
+          </div>
+          <!--portfolio_box_description-->
+        </div>
+        <!--portfolio_box-->
+        <div class="portfolio_box">
+          <h3 class="portfolio_box_title">Recipe box</h3>
+          <a href="https://rossellafer.github.io/recipe-box/" target="_blank">
+            <img class="portfolio_img" alt="Preview image - Recipe box" src="assets/Recipe box.png" />
+          </a>
+          <div class="portfolio_box_description">
+            <div class="portfolio_tags">
+              <p class="portfolio_tag">Web development</p>
+              <p class="portfolio_tag">Personal project</p>
+            </div>
+            <p>
+              Simple CRUD application for recipes, using local storage to save and retrieve data. Project built to
+              practice React and Tailwind.
+            </p>
+            <p>Stack:</p>
+            <ul>
+              <li>React</li>
+              <li>Tailwind</li>
+              <li>Data persistence with local storage</li>
+            </ul>
+            <a href="https://github.com/RossellaFer/recipe-box" target="_blank" class="link">Github repo</a>
+          </div>
+          <!--portfolio_box_description-->
+        </div>
+        <!--portfolio_box-->
+        <div class="portfolio_box">
+          <h3 class="portfolio_box_title">Wedding website</h3>
+          <a href="https://a-wedding-website-demo.netlify.com/" target="_blank">
+            <img class="portfolio_img" alt="Preview image - wedding website" src="assets/wedding-website.jpg" />
+          </a>
+          <div class="portfolio_box_description">
+            <div class="portfolio_tags">
+              <p class="portfolio_tag">Web development</p>
+              <p class="portfolio_tag">Personal project</p>
+            </div>
+            <p>
+              ReactJS web app to manage the RSVPs to my wedding. I also
+              wrote some
+              <a href="https://medium.com/@rferrandino.tokyo/a-wedding-website-in-reactjs-9b05f112e56d" target="_blank"
+                class="link">technical articles</a>
+              on this project.
+            </p>
+            <p>Stack:</p>
+            <ul>
+              <li>Data persistance with Firebase</li>
+              <li>i18n - Italian and English</li>
+              <li>Google maps integration</li>
+            </ul>
+            <a href="https://a-wedding-website-demo.netlify.com/" target="_blank" class="link">Go to demo website</a>
+          </div>
+          <!--portfolio_box_description-->
+        </div>
+        <!--portfolio_box-->
+        <div class="portfolio_box">
+          <h3 class="portfolio_box_title">WiSE Japan</h3>
+          <a href="https://womeninsoftware.jp/" target="_blank">
+            <img class="portfolio_img" alt="Preview image - women in software engineering Japan"
+              src="assets/wisejapan-image.png" />
+          </a>
+          <div class="portfolio_box_description">
+            <div class="portfolio_tags">
+              <p class="portfolio_tag">Web development</p>
+              <p class="portfolio_tag">Open source contribution</p>
+            </div>
+            <p>
+              Helped out with the temporary website for the Women in Software Engineering Japan, while learning more
+              about Vite and TypeScript.
+            </p>
+            <p>Stack:</p>
+            <ul>
+              <li>Vite + Vitest</li>
+              <li>Lighthouse Actions</li>
+              <li>TypeScript</li>
+            </ul>
+            <a href="https://womeninsoftware.jp/" target="_blank" class="link">Learn more about WiSE Japan</a> or
+            checkout the <a href="https://github.com/WomenInSoftwareEngineeringJP/home" target="_blank"
+              class="link">Github
+              repo</a>.
+          </div>
+          <!--portfolio_box_description-->
+        </div>
+        <!--portfolio_box-->
+        <div class="portfolio_box">
+          <h3 class="portfolio_box_title">SpeakHer Japan</h3>
+          <a href="https://speakher.jp/" target="_blank">
+            <img class="portfolio_img" alt="Preview image - SpeakHer Japan" src="assets/speakher.png" />
+          </a>
+          <div class="portfolio_box_description">
+            <div class="portfolio_tags">
+              <p class="portfolio_tag">Web development</p>
+              <p class="portfolio_tag">Open source contribution</p>
+            </div>
+            <p>
+              Contributed to SpeakHer, a database of women public speakers in Japan. The project was featured on The
+              Japan Times and was led by the leadership team of Women Who Code Tokyo.
+            </p>
+            <p>Stack:</p>
+            <ul>
+              <li>Vue.js</li>
+              <li>Airtable</li>
+            </ul>
+            <a href="https://speakher.jp/" target="_blank" class="link">Go to website</a> or check out the <a
+              href="https://github.com/WomenInSoftwareEngineeringJP/speak-her-db" target="_blank" class="link">Github
+              repo</a>.
+          </div>
+          <!--portfolio_box_description-->
+        </div>
+        <!--portfolio_box-->
+        <div class="portfolio_box">
+          <h3 class="portfolio_box_title">Local Volunteer app & website</h3>
+          <a href="https://www.behance.net/gallery/154461311/Local-Volunteer" target="_blank">
+            <img class="portfolio_img" alt="Preview image - Local Volunteer UX design"
+              src="assets/behance_local_volunteer.png" />
+          </a>
+          <div class="portfolio_box_description">
+            <div class="portfolio_tags">
+              <p class="portfolio_tag">UX design</p>
+              <p class="portfolio_tag">Mockup</p>
+            </div>
+            <p>
+              UX design for mobile app & responsive website for a fictional
+              service that helps people find volunteering opportunities in
+              their local area. This project is part of the Google UX design
+              professional certificate.
+            </p>
+            <p>Stack:</p>
+            <ul>
+              <li>Figma</li>
+              <li>App design</li>
+              <li>User research, competitive analysis</li>
+            </ul>
+            <a href="https://www.behance.net/gallery/154461311/Local-Volunteer" target="_blank" class="link">Go to case
+              study</a>
+          </div>
+          <!--portfolio_box_description-->
+        </div>
+        <!--portfolio_box-->
+        <div class="portfolio_box">
+          <h3 class="portfolio_box_title">Find a mentor</h3>
+          <a href="https://www.behance.net/gallery/150733397/Mentor-request-flow-for-a-coding-bootcamp" target="_blank">
+            <img class="portfolio_img" alt="Preview image - Find a mentor UX design"
+              src="assets/behance_find_a_mentor.png" />
+          </a>
+          <div class="portfolio_box_description">
+            <div class="portfolio_tags">
+              <p class="portfolio_tag">UX design</p>
+              <p class="portfolio_tag">Mockup</p>
+            </div>
+            <p>
+              UX design from concept to delivery of mentor request flow for
+              fictional a tech bootcamp. This project is part of the Google UX
+              design professional certificate.
+            </p>
+            <p>Stack:</p>
+            <ul>
+              <li>Adobe XD</li>
+              <li>Responsive design based on user research</li>
+              <li>Usability testing</li>
+            </ul>
+            <a href="https://www.behance.net/gallery/150733397/Mentor-request-flow-for-a-coding-bootcamp"
+              target="_blank" class="link">Go to case study</a>
+          </div>
+          <!--portfolio_box_description-->
+        </div>
+        <!--portfolio_box-->
+        <div class="portfolio_box">
+          <h3 class="portfolio_box_title">Enoteca omnichannel app</h3>
+          <a href="https://www.behance.net/gallery/149111121/Enoteca-wine-shop-app" target="_blank">
+            <img class="portfolio_img" alt="Preview image - Enoteca UX design" src="assets/behance_enoteca.png" />
+          </a>
+          <div class="portfolio_box_description">
+            <div class="portfolio_tags">
+              <p class="portfolio_tag">UX design</p>
+              <p class="portfolio_tag">Mockup</p>
+            </div>
+            <p>
+              UX design for omnichannel app for a fictional boutique retailer
+              of wine and spirits. This project is part of the Google UX
+              design professional certificate.
+            </p>
+            <p>Stack:</p>
+            <ul>
+              <li>Figma</li>
+              <li>App design</li>
+              <li>User research, competitive analysis</li>
+            </ul>
+            <a href="https://www.behance.net/gallery/149111121/Enoteca-wine-shop-app" target="_blank" class="link">Go to
+              case study</a>
+          </div>
+          <!--portfolio_box_description-->
+        </div>
+      </div>
+      <!--portfolio_container-->
+    </section>
+    <!-- Portfolio section -->
+
+    <section id="contact" class="container">
+      <h2 class="text-center">Contact</h2>
+      <div class="row contact-section-row">
+        <div class="contact-section-column">
+          <h3>You can reach out for:</h3>
+          <ul>
+            <li>Japan-based job opportunities</li>
+            <li>Travel ideas</li>
+            <li>Mentorship</li>
+            <li>Tech articles ideas and requests</li>
+            <li>Advice on visiting Japan</li>
+            <li>Italian cooking tips</li>
+          </ul>
+        </div>
+        <div class="contact-section-column contact_details">
+          <h3>Contact me directly</h3>
+          <p>Rossella Ferrandino</p>
+          <p>Looking to relocate to <strong>Tokyo, Japan</strong></p>
+          <p>
+            Drop me an
+            <a href="mailto: ross.ferrandino@gmail.com" aria-label="Email" class="link">email</a>
+          </p>
+          <h3>Find me online</h3>
+          <a href="https://github.com/RossellaFer" target="_blank" aria-label="Github" rel="noopener"><i
+              class="icons fab fa-2x fa-github"></i></a>
+          <a href="https://dev.to/rossellafer" target="_blank" aria-label="Dev" rel="noopener"><i
+              class="fab fa-2x fa-dev"></i></a>
+          <a href="https://medium.com/@rferrandino.tokyo" target="_blank" aria-label="Medium" rel="noopener"><i
+              class="fab fa-2x fa-medium"></i></a>
+          <a href="https://www.linkedin.com/in/rossella-ferrandino-67601226/" target="_blank" aria-label="LinkedIn"
+            rel="noopener"><i class="icons fab fa-linkedin fa-2x"></i></a>
+          <a href="https://www.behance.net/rossellferrand" target="_blank" aria-label="Twitter" rel="noopener"><i
+              class="fab fa-2x fa-behance"></i></a>
+          <a href="https://twitter.com/ross_ferrandino" target="_blank" aria-label="Twitter" rel="noopener"><i
+              class="icons fab fa-2x fa-twitter"></i></a>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+
 </html>
