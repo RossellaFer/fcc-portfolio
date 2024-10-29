@@ -118,12 +118,12 @@ header {
 .main-menu {
   position: absolute;
   display: none;
-  left: -200px;
+  right: -200px;
   top: 0;
   height: 100%;
   overflow-y: scroll;
   overflow-x: visible;
-  transition: left 0.3s ease, box-shadow 0.3s ease;
+  transition: right 0.3s ease, box-shadow 0.3s ease;
   z-index: 999;
 }
 
@@ -188,12 +188,13 @@ header {
 .main-menu:target,
 .main-menu[aria-expanded="true"] {
   display: block;
-  left: 0;
+  right: 0;
   outline: none;
   overflow: hidden;
   -moz-box-shadow: 3px 0 12px rgba(0, 0, 0, 0.25);
   -webkit-box-shadow: 3px 0 12px rgba(0, 0, 0, 0.25);
   box-shadow: 3px 0 12px rgba(0, 0, 0, 0.25);
+  animation: slideIn 0.5s forwards;
 }
 
 .main-menu:target .menu-close,
@@ -227,6 +228,18 @@ header {
   .main-menu:target+.backdrop,
   .main-menu[aria-expanded="true"]+.backdrop {
     position: fixed;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 
@@ -425,6 +438,7 @@ li a {
   text-align: center;
   max-width: 750px;
   margin: 0 auto 40px auto;
+  font-size: 18px;
 }
 
 #contact h2 {
@@ -836,6 +850,11 @@ li a {
   max-width: 70%;
 }
 
+.blog-year {
+  border-bottom: 1px solid grey;
+  padding-bottom: 20px;
+}
+
 .blog-list {
   margin-top: 4px;
   padding-left: 0;
@@ -871,11 +890,11 @@ li a {
 
   .blog-list-item {
     flex-direction: column-reverse;
+    line-height: 1.5em;
   }
 
   .blog-list-item-small {
-    text-align: left;
-    margin-bottom: 10px;
+    display: none;
   }
 
   .portfolio_img {
