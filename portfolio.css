@@ -847,10 +847,6 @@ li a {
   max-width: 70%;
 }
 
-.blog-year {
-  border-bottom: 1px solid grey;
-  padding-bottom: 20px;
-}
 
 .blog-list {
   margin-top: 4px;
@@ -1012,3 +1008,78 @@ li a {
   margin-top: 20px;
   border-top: 1px solid rgba(0, 150, 136, 0.4);
 }
+
+.blog-list {
+  padding-left: 0;
+  margin-top: 1.5rem;
+  border-left: 2px solid #ddd;
+  padding-left: 0.5rem;
+}
+
+.blog-year {
+  font-size: 1.8rem;
+  margin-left: 1.25rem;
+  font-weight: 700;
+  color: #222;
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.blog-list-item {
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  border-left: 3px solid transparent;
+  border-radius: 0;
+}
+
+@media (max-width: 500px) {
+  .blog-list {
+    border-left: none;
+    padding-left: 0;
+  }
+}
+
+
+.blog-list-item:hover {
+  transform: translateX(5px);
+  background-color: #f8f8f8;
+  border-left: 3px solid #333;
+}
+
+.blog-list-title a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #333;
+}
+
+.blog-list-item-small {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 0.25rem;
+}
+
+.blog-labels {
+  margin-top: 0.4rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.label {
+  font-size: 0.7rem;
+  background-color: #eee;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.label.shopify { background: #96bf48; color: white; }
+.label.devlife { background: var(--coral); color: white; }
+.label.tutorial { background: #3498db; color: white; }
+.label.react { background: var(--teal); color: white; }
+.label.sustainable { background: #228B22; color: white; }
