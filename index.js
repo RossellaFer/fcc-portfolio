@@ -6,12 +6,17 @@ document.addEventListener("DOMContentLoaded", function () {
         className: "shopify",
       },
       {
+        regex: /\b(seo)\b/i,
+        label: "#SEO",
+        className: "seo",
+      },
+      {
         regex: /\b(journey|life|learning|nomad|remote|developer)\b/i,
         label: "#DevLife",
         className: "devlife",
       },
       {
-        regex: /\b(react|javascript|seo|tutorial|guide|how to|metaobject)\b/i,
+        regex: /\b(react|javascript|tutorial|guide|how to|metaobject)\b/i,
         label: "#Tutorial",
         className: "tutorial",
       },
