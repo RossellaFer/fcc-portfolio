@@ -23,9 +23,13 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Helper: Create Article HTML
-  const createArticleHtml = (article) => {
+  const createArticleHtml = (article, options = {}) => {
+    const { eagerlyLoadImage = false, prioritizeImage = false } = options;
+    const imageLoadingAttrs = eagerlyLoadImage
+      ? `loading="eager"${prioritizeImage ? ' fetchpriority="high"' : ""}`
+      : 'loading="lazy"';
     const imageHtml = article.image
-      ? `<div class="blog-card-image"><img src="${article.image}" alt="${article.title}" loading="lazy"></div>`
+      ? `<div class="blog-card-image"><img src="${article.image}" alt="${article.title}" ${imageLoadingAttrs}></div>`
       : '';
 
     return `
@@ -52,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
     blogList.className = "blog-list";
     blogContentWrapper.appendChild(blogList);
 
-    allArticles.forEach((article) => {
+    allArticles.forEach((article, index) => {
       categoryCounts.all++;
       const li = document.createElement("li");
       li.className = "blog-list-item";
@@ -63,7 +67,10 @@ document.addEventListener("DOMContentLoaded", function () {
         if (categoryCounts[className] !== undefined) categoryCounts[className]++;
       });
 
-      li.innerHTML = createArticleHtml(article);
+      li.innerHTML = createArticleHtml(article, {
+        eagerlyLoadImage: index < 3,
+        prioritizeImage: index === 0,
+      });
       blogList.appendChild(li);
     });
 
