@@ -16,6 +16,14 @@ const blogData = [
         year: 2025,
         articles: [
             {
+                title: "Recognition as a skill: lessons from building visibility in tech",
+                url: "https://medium.com/@rferrandino.tokyo/recognition-as-a-skill-lessons-from-building-visibility-in-tech-9a969a5c4823",
+                readTime: "2 min read",
+                type: "medium",
+                tags: ["#DevLife", "#WiSEJapan"],
+                image: "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*inZisI_eybO8h-_LAiGHlQ.png"
+            },
+            {
                 title: "Mapping the Shopify App Ecosystem in Italy (2025)",
                 url: "https://medium.com/@rferrandino.tokyo/mapping-the-shopify-app-ecosystem-in-italy-2025-203545ae26f5",
                 readTime: "6 min read",
