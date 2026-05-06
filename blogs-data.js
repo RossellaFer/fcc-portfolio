@@ -3,6 +3,14 @@ const blogData = [
         year: 2026,
         articles: [
             {
+                title: "From Prompting to Systems Thinking: My Experience with Anthropic’s Claude API Course",
+                url: "https://medium.com/@rferrandino.tokyo/from-prompting-to-systems-thinking-my-experience-with-anthropics-claude-api-course-40dec465b4c8",
+                readTime: "3 min read",
+                type: "external",
+                tags: ["#AI", "#DevLife"],
+                image: "https://miro.medium.com/v2/resize:fit:1400/format:webp/0*VnE4p663yQePYus6"
+            },
+            {
                 title: "Beyond Drag-and-Drop: Programming Complex Logic in Shopify Flow",
                 url: "https://flagship.cc/en/blogs/columns/beyond-drag-and-drop-programming-complex-logic-in-shopify-flow",
                 readTime: "6 min read",
