@@ -3,12 +3,20 @@ const blogData = [
         year: 2026,
         articles: [
             {
-                title: "From Prompting to Systems Thinking: My Experience with Anthropic’s Claude API Course",
+                title: "The Storefront Is No Longer Just for Humans",
+                url: "https://medium.com/@rferrandino.tokyo/the-storefront-is-no-longer-just-for-humans-82e95a2f03f3",
+                readTime: "3 min read",
+                type: "external",
+                tags: ["#AI", "#Shopify"],
+                image: "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*1ptOWLAvmzVGCtmU-D25_w.jpeg"
+            },
+            {
+                title: "From Prompting to Systems Thinking: Anthropic’s Claude API Course",
                 url: "https://medium.com/@rferrandino.tokyo/from-prompting-to-systems-thinking-my-experience-with-anthropics-claude-api-course-40dec465b4c8",
                 readTime: "3 min read",
                 type: "external",
                 tags: ["#AI", "#DevLife"],
-                image: "https://miro.medium.com/v2/resize:fit:1400/format:webp/0*VnE4p663yQePYus6"
+                image: "https://miro.medium.com/v2/resize:fit:1200/format:webp/0*VnE4p663yQePYus6"
             },
             {
                 title: "Beyond Drag-and-Drop: Programming Complex Logic in Shopify Flow",
