@@ -3,6 +3,14 @@ const blogData = [
         year: 2026,
         articles: [
             {
+                title: "Testing AI Systems Feels Different From Traditional Software Development",
+                url: "https://medium.com/@rferrandino.tokyo/testing-ai-systems-feels-different-from-traditional-software-development-58b70af18457",
+                readTime: "4 min read",
+                type: "external",
+                tags: ["#AI", "#DevLife"],
+                image: "https://miro.medium.com/v2/resize:fit:1400/format:webp/0*M2uZbo7GSZCRIxG0"
+            },
+            {
                 title: "The Storefront Is No Longer Just for Humans",
                 url: "https://medium.com/@rferrandino.tokyo/the-storefront-is-no-longer-just-for-humans-82e95a2f03f3",
                 readTime: "3 min read",
