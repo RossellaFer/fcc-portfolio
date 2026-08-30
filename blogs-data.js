@@ -3,10 +3,18 @@ const blogData = [
         year: 2026,
         articles: [
             {
+                title: "What the JLPT registration rush taught me about high-traffic systems",
+                url: "https://medium.com/@rferrandino.tokyo/what-the-jlpt-registration-rush-taught-me-about-high-traffic-systems-b392503a660e",
+                readTime: "6 min read",
+                type: "medium",
+                tags: ["#Infrastructure", "#DevLife", "#UX"],
+                image: "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*eQIr0OqGG3TB4wGosyuiyQ.jpeg"
+            },
+            {
                 title: "Testing AI Systems Feels Different From Traditional Software Development",
                 url: "https://medium.com/@rferrandino.tokyo/testing-ai-systems-feels-different-from-traditional-software-development-58b70af18457",
                 readTime: "4 min read",
-                type: "external",
+                type: "mediym",
                 tags: ["#AI", "#DevLife"],
                 image: "https://miro.medium.com/v2/resize:fit:1400/format:webp/0*M2uZbo7GSZCRIxG0"
             },
@@ -14,7 +22,7 @@ const blogData = [
                 title: "The Storefront Is No Longer Just for Humans",
                 url: "https://medium.com/@rferrandino.tokyo/the-storefront-is-no-longer-just-for-humans-82e95a2f03f3",
                 readTime: "3 min read",
-                type: "external",
+                type: "medium",
                 tags: ["#AI", "#Shopify"],
                 image: "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*1ptOWLAvmzVGCtmU-D25_w.jpeg"
             },
@@ -22,7 +30,7 @@ const blogData = [
                 title: "From Prompting to Systems Thinking: Anthropic’s Claude API Course",
                 url: "https://medium.com/@rferrandino.tokyo/from-prompting-to-systems-thinking-my-experience-with-anthropics-claude-api-course-40dec465b4c8",
                 readTime: "3 min read",
-                type: "external",
+                type: "medium",
                 tags: ["#AI", "#DevLife"],
                 image: "https://miro.medium.com/v2/resize:fit:1200/format:webp/0*VnE4p663yQePYus6"
             },
@@ -32,7 +40,7 @@ const blogData = [
                 readTime: "6 min read",
                 type: "external",
                 tags: ["#Shopify", "#Tutorial"],
-                image: "https://cdn.shopify.com/s/files/1/0070/7032/articles/Blog_Hero_1848x970_8fa3dd24-5e04-4bab-bf11-cd7baa7b8710.png?v=1727451843&originalWidth=1848&originalHeight=782&width=1800"
+                image: "https://cdn.shopify.com/s/files/1/2794/0956/files/Screenshot_2026-02-26_at_14.18.53.png?v=1772084094&width=1200"
             }
         ]
     },
