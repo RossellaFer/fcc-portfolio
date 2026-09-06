@@ -3,6 +3,22 @@ const blogData = [
         year: 2026,
         articles: [
             {
+                title: "Ask for a guess, not an overview",
+                url: "https://medium.com/@rferrandino.tokyo/ask-for-a-guess-not-an-overview-da54fc56daa7",
+                readTime: "3 min read",
+                type: "medium",
+                tags: ["#AI", "#DevLife"],
+                image: "https://miro.medium.com/v2/resize:fit:1400/format:webp/0*xR4n548x8JgzeYnp"
+            },
+            {
+                title: "The Future of Liquid: Liquid for Humans Is Liquid for Agents",
+                url: "https://flagship.inc/en/columns/shopify-dotdev-2026-report-vol2",
+                readTime: "6 min read",
+                type: "external",
+                tags: ["#Shopify", "#DevLife"],
+                image: "https://cdn.shopify.com/s/files/1/2794/0956/files/2026-08-28_18.33.43.png?v=1787909635"
+            },
+            {
                 title: "What the JLPT registration rush taught me about high-traffic systems",
                 url: "https://medium.com/@rferrandino.tokyo/what-the-jlpt-registration-rush-taught-me-about-high-traffic-systems-b392503a660e",
                 readTime: "6 min read",
