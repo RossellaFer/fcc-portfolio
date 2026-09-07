@@ -4,66 +4,38 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <title>Rossella Ferrandino | Software Engineer</title>
-  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+  <title>Blog | Rossella Ferrandino</title>
+  <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
   <meta name="keyword" content="Rossella Ferrandino, portfolio, javascript, developer" />
-  <meta property="og:title" content="Rossella Ferrandino | Front End Web Developer" />
+  <meta property="og:title" content="Blog | Rossella Ferrandino" />
   <meta property="og:description"
-    content="Front-end developer with professional experience in project management and marketing" />
+    content="Technical articles, tutorials, and engineering reflections by Rossella Ferrandino." />
   <meta property="og:image" content="https://github.com/RossellaFer/fcc-portfolio/blob/master/preview.png?raw=true" />
-  <meta property="og:url" content="http://rossellaferrandino.info" />
+  <meta property="og:url" content="https://www.rossellaferrandino.info/blog/" />
   <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://www.rossellaferrandino.info/blog/" />
   <meta name="description"
-    content="Front-end developer with professional experience in project management and marketing" />
+    content="A searchable collection of technical articles, tutorials, and engineering reflections by Rossella Ferrandino." />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Rossella Ferrandino" />
+  <meta name="twitter:title" content="Blog | Rossella Ferrandino" />
   <meta name="twitter:description"
-    content="Front-end developer with professional experience in project management and marketing" />
+    content="Technical articles, tutorials, and engineering reflections by Rossella Ferrandino." />
   <meta name="twitter:image" content="https://github.com/RossellaFer/fcc-portfolio/blob/master/preview.png?raw=true" />
-  <link rel="stylesheet" type="text/css" href="portfolio.css?21" />
+  <link rel="stylesheet" type="text/css" href="/portfolio.css?23" />
   <!-- Fonts and Icons -->
   <link defer href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
   <script defer src="https://kit.fontawesome.com/88f56c2b29.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <header>
-    <a href="index.html">
-      <div class="logo">
-        <img alt="Logo image" id="logo-image" src="assets/RF_logo_black_2.svg" />
-        <span>Rossella Ferrandino</span>
-      </div>
-    </a>
-    <a href="#main-menu" id="main-menu-toggle" class="menu-toggle" aria-label="Open main menu">
-      <span class="sr-only">Open main menu</span>
-      <span class="fas fa-bars" aria-hidden="true"></span>
-    </a>
-    <nav id="main-menu" class="main-menu" aria-label="Main menu">
-      <a href="#main-menu-toggle" id="main-menu-close" class="menu-close" aria-label="Close main menu">
-        <span class="sr-only">Close main menu</span>
-        <span class="fas fa-times" aria-hidden="true"></span>
-      </a>
-      <ul>
-        <li class="mobile-only"><a href="#">Home</a></li>
-        <li><a href="index.html#about">About</a></li>
-        <li><a href="index.html#portfolio">Work</a></li>
-        <li><a href="index.html#contact">Contact</a></li>
-        <li><a href="/blog.html">Blog</a></li>
-        <li><a href="notes.html">Notes</a></li>
-        <li>
-          <a class="download_button" target="_blank" href="CV/Rossella Ferrandino CV.pdf">Resume<span></span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <a href="#main-menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>
-  </header>
+  {% include "header.njk" %}
   <!-- Main section -->
   <div id="blogs-main">
     <div class="shell wrapper">
       <div class="blog-header">
         <h1>Blog</h1>
-        <p>A collection of all my articles, tutorials and reflections.</p>
+        <p>I use the Blog to share technical knowledge through articles, tutorials, and engineering analysis published
+          on Medium, Flagship, and elsewhere. Search the archive by topic below.</p>
       </div>
       <div class="blog-search-container">
         <i class="fas fa-search"></i>
@@ -82,14 +54,15 @@
       <div id="blog-content-wrapper">
         <!-- Blogs will be injected here by index.js -->
       </div>
-      <script src="blogs-data.js?1"></script>
-      <script src="index.js?3" defer></script>
+      <script src="/blogs-data.js?1"></script>
+      <script src="/index.js?3" defer></script>
       <!-- 100% privacy-first analytics -->
       <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
       <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt=""
           referrerpolicy="no-referrer-when-downgrade" /></noscript>
     </div>
   </div>
+  {% include "footer.njk" %}
 </body>
 
 </html>
