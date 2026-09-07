@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>{{ title }} | Rossella Ferrandino</title>
+  <meta name="description" content="{{ description }}" />
+  <link rel="canonical" href="https://www.rossellaferrandino.info{{ page.url }}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="{{ title }}" />
+  <meta property="og:description" content="{{ ogDescription or description }}" />
+  <meta property="og:url" content="https://www.rossellaferrandino.info{{ page.url }}" />
+  <meta property="og:image" content="https://www.rossellaferrandino.info{{ image }}" />
+  <meta property="og:image:alt" content="{{ imageAlt }}" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" href="/portfolio.css?23" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+  <script defer src="https://kit.fontawesome.com/88f56c2b29.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  {% include "header.njk" %}
+  <main id="notes-main">
+    <div class="shell wrapper notes-wrapper note-page">
+      <a class="notes-breadcrumb" href="/notes/">All notes</a>
+      <article class="note-entry note-entry--standalone">
+        <header>
+          <p class="note-entry-label">{{ label }}</p>
+          <h1>{{ title }}</h1>
+        </header>
+        <figure class="note-entry-image">
+          <img src="{{ image }}" width="{{ imageWidth }}" height="{{ imageHeight }}"
+            alt="{{ imageAlt }}" loading="eager" fetchpriority="high" />
+          {% if imageCaption %}<figcaption>{{ imageCaption }}</figcaption>{% endif %}
+        </figure>
+        <div class="note-entry-intro">
+          {{ content | safe }}
+        </div>
+      </article>
+      <a class="notes-back-link" href="/notes/">Back to all notes</a>
+    </div>
+  </main>
+  {% include "footer.njk" %}
+  <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+  <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt=""
+      referrerpolicy="no-referrer-when-downgrade" /></noscript>
+</body>
+</html>

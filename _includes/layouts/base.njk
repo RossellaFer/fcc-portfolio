@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>{{ title }} | Rossella Ferrandino</title>
+  {% if description %}<meta name="description" content="{{ description }}" />{% endif %}
+  <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" href="/portfolio.css?23" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+  <script defer src="https://kit.fontawesome.com/88f56c2b29.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  {% include "header.njk" %}
+
+  {{ content | safe }}
+
+  {% include "footer.njk" %}
+</body>
+
+</html>

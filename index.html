@@ -35,46 +35,14 @@
         ]
       }
     </script>
-  <link rel="stylesheet" type="text/css" href="portfolio.css?21" />
+  <link rel="stylesheet" type="text/css" href="/portfolio.css?23" />
   <!-- Fonts and Icons -->
   <link defer href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
   <script defer src="https://kit.fontawesome.com/88f56c2b29.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <header>
-    <a href="/index.html">
-      <div class="logo">
-        <img alt="Logo image" width="50" height="50" id="logo-image" src="assets/RF_logo_black_2.svg" />
-        <span>Rossella Ferrandino</span>
-      </div>
-    </a>
-
-    <a href="#main-menu" id="main-menu-toggle" class="menu-toggle" aria-label="Open main menu">
-      <span class="sr-only">Open main menu</span>
-      <span class="fas fa-bars" aria-hidden="true"></span>
-    </a>
-
-    <nav id="main-menu" class="main-menu" aria-label="Main menu">
-      <a href="#main-menu-toggle" id="main-menu-close" class="menu-close" aria-label="Close main menu">
-        <span class="sr-only">Close main menu</span>
-        <span class="fas fa-times" aria-hidden="true"></span>
-      </a>
-      <ul>
-        <li class="mobile-only"><a href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Work</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="notes.html">Notes</a></li>
-        <li>
-          <a class="download_button" target="_blank" href="CV/Rossella Ferrandino CV.pdf">Resume<span></span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <a href="#main-menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>
-  </header>
+  {% include "header.njk" %}
 
   <!-- Main section -->
   <div id="main">
@@ -86,7 +54,7 @@
         engineering and working in Japan.</p>
       <div class="hero-actions">
         <a class="primary-link" href="#portfolio">View past projects</a>
-        <a class="secondary-link" href="notes.html">Read my notes</a>
+        <a class="secondary-link" href="/notes/">Read my notes</a>
       </div>
     </div>
   </div>
@@ -105,7 +73,7 @@
           <p>I’m a software engineer based in Tokyo and a Frontend Tech Lead at <a class="link" target="_blank"
               rel="noopener" href="https://flagship.cc/en">Flagship LLC</a>. I specialize in Shopify development and
             building maintainable storefronts that connect customer needs, business goals, and technical systems.</p>
-          <p>Over seven years in web development, I’ve led projects, co-founded the sustainable e-commerce agency <a
+          <p>Over seven years in web development, I’ve led projects, co-owned the sustainable e-commerce agency <a
               class="link" target="_blank" rel="noopener" href="https://namastudio.it/en">Nama Studio</a>, and worked
             across engineering, UX, and performance. My earlier career in marketing still shapes how I translate
             requirements into practical products.</p>
@@ -353,7 +321,7 @@
         </div>
       </div>
       <div class="salutation_and_download">
-        <a class="download_button" target="_blank" rel="noopener" href="CV/Rossella Ferrandino CV.pdf">
+        <a class="download_button" target="_blank" rel="noopener" href="/CV/Rossella Ferrandino CV.pdf">
           Download my resume<span></span>
         </a>
         <p>よろしくお願いします！<br />Nice to meet you!</p>
@@ -363,22 +331,21 @@
 
     <section id="latest-blogs" class="wrapper">
       <h2>Writing &amp; Notes</h2>
-      <p class="text-center">Technical articles, engineering reflections, and monthly notes on working and learning in
-        Japan.</p>
+      <p class="text-center">The Blog shares reusable technical knowledge through articles and tutorials. Notes keeps
+        a personal record of ongoing interests, career stories, and life as an engineer in Japan.</p>
       <div class="writing-overview">
         <article class="writing-feature">
           <p class="writing-kicker">Latest article</p>
           <div id="latest-blogs-container">
             <!-- The latest article will be injected here -->
           </div>
-          <a href="blog.html" class="writing-feature-link">View all articles</a>
+          <a href="/blog/" class="writing-feature-link">View all articles</a>
         </article>
         <article class="writing-feature">
           <p class="writing-kicker">Latest note</p>
-          <h3>September 2026</h3>
-          <p>A month of high-traffic systems, AI-assisted codebase exploration, Shopify Liquid, and intensive JLPT N3
-            preparation.</p>
-          <a href="notes.html" class="writing-feature-link">Read the September notes</a>
+          <h3>Summer 2026</h3>
+          <p>High-traffic systems, AI-assisted codebase exploration, Shopify DotDev, and preparing for JLPT N3.</p>
+          <a href="/notes/summer-2026/" class="writing-feature-link">Read the note</a>
         </article>
       </div>
     </section>
@@ -428,8 +395,9 @@
       </div>
     </section>
   </div>
-  <script src="blogs-data.js?1"></script>
-  <script src="index.js?3" defer></script>
+  {% include "footer.njk" %}
+  <script src="/blogs-data.js?1"></script>
+  <script src="/index.js?3" defer></script>
   <!-- 100% privacy-first analytics -->
   <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
   <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt=""
