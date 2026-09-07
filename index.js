@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ${imageHtml}
       <div class="blog-card-content">
         <div class="blog-list-title">
-          <a target="_blank" href="${article.url}">${article.title}</a>
+          <a target="_blank" rel="noopener noreferrer" href="${article.url}">${article.title}</a>
           <div class="blog-labels">
             ${article.tags.map(tag => `<span class="label ${tag.replace('#', '').toLowerCase()}">${tag}</span>`).join('')}
           </div>
@@ -110,18 +110,18 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // --- HOMEPAGE LOGIC (Latest 3) ---
+  // --- HOMEPAGE LOGIC (Latest article) ---
   if (latestBlogsContainer && typeof blogData !== 'undefined') {
-    const latestList = document.createElement("ul");
-    latestList.className = "blog-list"; // Reuse same grid styles
-    latestBlogsContainer.appendChild(latestList);
+    const latestArticle = allArticles[0];
 
-    // Get the first 3
-    allArticles.slice(0, 3).forEach(article => {
-      const li = document.createElement("li");
-      li.className = "blog-list-item";
-      li.innerHTML = createArticleHtml(article);
-      latestList.appendChild(li);
-    });
+    if (latestArticle) {
+      latestBlogsContainer.innerHTML = `
+        <h3><a target="_blank" rel="noopener noreferrer" href="${latestArticle.url}">${latestArticle.title}</a></h3>
+        <p class="writing-meta">${latestArticle.year} · ${latestArticle.readTime}</p>
+        <div class="blog-labels">
+          ${latestArticle.tags.map(tag => `<span class="label ${tag.replace('#', '').toLowerCase()}">${tag}</span>`).join('')}
+        </div>
+      `;
+    }
   }
 });
