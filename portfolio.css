@@ -22,6 +22,7 @@ body {
   background-color: #f8f8f8;
   color: var(--dark-blue);
   margin: 0;
+  line-height: 1.6;
 }
 
 .shell {
@@ -42,9 +43,9 @@ h4 {
 }
 
 p {
-  margin: 0 0 10px;
-  font-size: 16px;
-  line-height: 1.5em;
+  margin: 0 0 1rem;
+  font-size: 1.0625rem;
+  line-height: 1.7;
 }
 
 a {
@@ -317,7 +318,6 @@ li a {
 }
 
 #main {
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -326,7 +326,10 @@ li a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100svh;
+  min-height: 640px;
   position: relative;
+  padding: 84px 20px 40px;
 }
 
 .text-container {
@@ -334,41 +337,84 @@ li a {
   z-index: 2;
   background-color: rgba(255, 255, 255, 0.95);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 2rem;
-  max-width: 700px;
-  border-radius: 10px;
+  padding: 1.75rem 2rem;
+  max-width: 540px;
+  border-radius: 12px;
   color: var(--dark-blue);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .text-container h1 {
-  font-size: 50px;
+  font-size: clamp(2rem, 4vw, 2.625rem);
   font-weight: 700;
-  letter-spacing: 1px;
-  margin-bottom: 0.5rem;
+  letter-spacing: 0.02em;
+  line-height: 1.05;
+  margin: 0 0 0.5rem;
   color: var(--dark-blue);
 }
 
 .text-container h2 {
-  font-size: 24px;
-  font-weight: 300;
+  font-size: clamp(1.05rem, 2vw, 1.3rem);
+  font-weight: 400;
+  line-height: 1.3;
+  margin: 0;
   color: var(--dark-blue);
 }
 
-.text-container i {
-  color: var(--dark-blue) !important;
-  margin-top: 1rem;
+.hero-eyebrow {
+  color: var(--teal);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
 }
 
-.text-container i:hover {
-  transform: translateY(-5px);
-  color: var(--coral) !important;
+.hero-summary {
+  font-size: 0.95rem;
+  line-height: 1.55;
+  margin: 0.85rem auto 0;
+  max-width: 50ch;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-top: 1.1rem;
+}
+
+.primary-link,
+.secondary-link {
+  border: 1px solid var(--teal);
+  border-radius: 2px;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 0.6rem 0.9rem;
+}
+
+.primary-link {
+  background: var(--teal);
+  color: #fff;
+}
+
+.primary-link:hover,
+.primary-link:focus {
+  background: var(--coral);
+  border-color: var(--coral);
+  color: #fff;
+}
+
+.secondary-link {
+  background: #fff;
+  color: var(--teal);
 }
 
 #about {
   position: relative;
-  padding-top: 100px;
-  max-width: 85%;
+  padding-top: 96px;
 }
 
 .text_large {
@@ -385,23 +431,36 @@ li a {
 }
 
 .wrapper {
-  max-width: 85%;
+  max-width: 1120px;
   padding: 0 20px;
   margin: 0 auto;
-  text-align: justify;
+  text-align: left;
 }
 
 .about_block {
-  margin-bottom: 20px;
-  max-width: 960px;
+  max-width: 65ch;
   margin: 0 auto;
-  line-height: 1.5em;
 }
 
 .picture_and_intro {
   display: flex;
-  max-width: 960px;
+  align-items: center;
+  gap: 3rem;
+  max-width: 920px;
   margin: 0 auto;
+}
+
+.picture_and_intro .about_block {
+  flex: 1;
+}
+
+.about-interview-link {
+  color: var(--teal);
+  display: inline-block;
+  font-weight: 700;
+  margin-top: 0.5rem;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
 }
 
 #profilepicture {
@@ -448,30 +507,35 @@ li a {
   align-items: center;
   display: flex;
   flex-direction: column;
+  margin-top: 5rem;
 }
 
 .about_sub_section h2 {
   text-align: center;
   width: 100%;
-  font-size: 30px;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  margin-bottom: 2rem;
 }
 
 h2 {
   text-align: center;
   width: 100%;
-  font-size: 30px;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  line-height: 1.15;
+  margin: 0 0 2rem;
 }
 
 .portfolio_intro {
   text-align: center;
-  max-width: 750px;
-  margin: 0 auto 40px auto;
+  max-width: 65ch;
+  margin: 0 auto 3rem;
   font-size: 18px;
+  line-height: 1.7;
 }
 
 #contact h2 {
   width: 100%;
-  font-size: 30px;
+  font-size: clamp(2rem, 4vw, 2.75rem);
 }
 
 .expertise {
@@ -611,8 +675,7 @@ h2 {
 }
 
 #portfolio {
-  /*	max-height: 650px;*/
-  padding-top: 60px;
+  padding-top: 96px;
 }
 
 .row {
@@ -670,16 +733,21 @@ h2 {
 }
 
 #contact {
-  max-height: 650px;
-  padding-top: 20px;
-  margin-bottom: 160px;
-  margin-top: 100px;
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.contact-intro {
+  margin: 0 auto 2.5rem;
+  max-width: 62ch;
+  text-align: center;
 }
 
 .contact-section-row {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  gap: 4rem;
+  justify-content: center;
   max-width: 750px;
   margin: 0 auto;
 }
@@ -688,13 +756,33 @@ h2 {
   margin: 20px 0;
 }
 
+.contact-section-column {
+  flex: 1;
+  max-width: 340px;
+}
+
+.contact-email {
+  color: var(--teal);
+  display: inline-block;
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
 #contact li {
   margin: 10px 0;
 }
 
 @media (max-width: 899px) {
+  #main {
+    height: 100svh;
+  }
+
   .text-container {
     width: 85%;
+    padding: 2.25rem 1.5rem;
   }
 
   #profilepicture {
@@ -704,6 +792,7 @@ h2 {
 
   .picture_and_intro {
     flex-direction: column-reverse;
+    gap: 1.5rem;
   }
 
   .picture_gallery {
@@ -754,9 +843,32 @@ h2 {
   .contact_details {
     width: 100%;
   }
+
+  .contact-section-row {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .contact-section-column {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 500px) {
+  #main {
+    min-height: 640px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .text-container {
+    width: 100%;
+  }
+
+  .hero-summary {
+    font-size: 0.9rem;
+  }
+
   #profilepicture {
     max-width: 250px;
     margin: 0 auto;
@@ -916,9 +1028,66 @@ h2 {
   max-width: 650px;
 }
 
+.notes-index {
+  border-bottom: 1px solid rgba(33, 33, 33, 0.2);
+  border-top: 1px solid rgba(33, 33, 33, 0.2);
+  margin-bottom: 4rem;
+  padding: 1.5rem 0;
+}
+
+.notes-index h2 {
+  color: var(--dark-blue);
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  margin: 0 0 1rem;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.notes-index ul {
+  display: grid;
+  gap: 0.75rem 2rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.notes-index li {
+  padding-left: 1rem;
+  position: relative;
+}
+
+.notes-index li::before {
+  background: var(--teal);
+  border-radius: 50%;
+  content: "";
+  height: 0.35rem;
+  left: 0;
+  position: absolute;
+  top: 0.65em;
+  width: 0.35rem;
+}
+
+.notes-index a {
+  color: var(--teal);
+  font-weight: 600;
+}
+
+.notes-index a:hover {
+  color: var(--coral);
+}
+
+.notes-index a:focus-visible {
+  border-radius: 2px;
+  outline: 3px solid var(--coral);
+  outline-offset: 4px;
+}
+
 .note-entry {
   border-top: 1px solid rgba(33, 33, 33, 0.25);
   padding-top: 2.5rem;
+  scroll-margin-top: 90px;
 }
 
 .note-entry + .note-entry {
@@ -937,6 +1106,38 @@ h2 {
   font-size: clamp(1.9rem, 5vw, 2.6rem);
   margin: 0 0 1.5rem;
   text-align: left;
+}
+
+.note-entry-label {
+  color: var(--teal);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+}
+
+.note-entry-image {
+  margin: 0 0 2rem;
+}
+
+.note-entry-image--portrait {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 520px;
+}
+
+.note-entry-image img {
+  border-radius: 10px;
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.note-entry-image figcaption {
+  color: #666;
+  font-size: 0.85rem;
+  margin-top: 0.6rem;
 }
 
 .note-entry-intro p {
@@ -992,20 +1193,78 @@ h2 {
   margin-top: 4rem;
 }
 
-.writing-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-  margin: 3rem 0;
+#latest-blogs {
+  padding-top: 96px;
 }
 
-.writing-links .download_button {
+#latest-blogs > p {
+  margin: 0 auto;
+  max-width: 62ch;
+}
+
+.writing-overview {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 3rem auto 0;
+  max-width: 900px;
+}
+
+.writing-feature {
+  border-top: 2px solid var(--teal);
+  padding-top: 1.5rem;
+}
+
+.writing-kicker {
+  color: var(--teal);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.writing-feature h3 {
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
+  line-height: 1.3;
+  margin: 0 0 0.75rem;
+}
+
+.writing-feature h3 a {
+  color: var(--dark-blue);
+  font-size: inherit;
+  font-weight: 700;
+}
+
+.writing-feature h3 a:hover,
+.writing-feature h3 a:focus {
+  color: var(--coral);
+}
+
+.writing-meta {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.writing-feature-link {
+  color: var(--teal);
   display: inline-block;
-  margin: 0;
+  font-weight: 700;
+  margin-top: 1.25rem;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
 }
 
 @media only screen and (max-width: 750px) {
+  .notes-index ul {
+    grid-template-columns: 1fr;
+  }
+
+  .writing-overview {
+    gap: 2.5rem;
+    grid-template-columns: 1fr;
+  }
+
   #notes-main {
     padding: 90px 5px 60px;
   }
@@ -1165,12 +1424,14 @@ h2 {
   }
 
   #about,
-  #portfolio {
-    padding-top: 40px;
+  #portfolio,
+  #latest-blogs {
+    padding-top: 64px;
   }
 
   #contact {
-    margin-top: 20px;
+    padding-top: 64px;
+    padding-bottom: 80px;
   }
 
   #portfolio h2,
@@ -1187,6 +1448,36 @@ h2 {
   gap: 30px;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.more-projects {
+  margin: 2.5rem auto 0;
+  max-width: 1200px;
+}
+
+.more-projects summary {
+  color: var(--teal);
+  cursor: pointer;
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0 auto;
+  padding: 0.75rem;
+  text-align: center;
+  width: fit-content;
+}
+
+.more-projects summary:hover {
+  color: var(--coral);
+}
+
+.more-projects summary:focus-visible {
+  border-radius: 2px;
+  outline: 3px solid var(--coral);
+  outline-offset: 3px;
+}
+
+.portfolio_container_secondary {
+  margin-top: 2.5rem;
 }
 
 .portfolio_box {
@@ -1235,7 +1526,9 @@ h2 {
   padding: 0 14px 0 18px;
   transform: translate(-50%, -50%);
   background: #f8f8f8;
-  white-space: nowrap;
+  max-width: calc(100% - 32px);
+  text-align: center;
+  white-space: normal;
 }
 
 .portfolio_box_description {

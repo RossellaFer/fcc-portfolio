@@ -35,7 +35,7 @@
         ]
       }
     </script>
-  <link rel="stylesheet" type="text/css" href="portfolio.css?12" />
+  <link rel="stylesheet" type="text/css" href="portfolio.css?21" />
   <!-- Fonts and Icons -->
   <link defer href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
   <script defer src="https://kit.fontawesome.com/88f56c2b29.js" crossorigin="anonymous"></script>
@@ -44,10 +44,10 @@
 <body>
   <header>
     <a href="/index.html">
-      <h1 class="logo">
+      <div class="logo">
         <img alt="Logo image" width="50" height="50" id="logo-image" src="assets/RF_logo_black_2.svg" />
         <span>Rossella Ferrandino</span>
-      </h1>
+      </div>
     </a>
 
     <a href="#main-menu" id="main-menu-toggle" class="menu-toggle" aria-label="Open main menu">
@@ -63,7 +63,7 @@
       <ul>
         <li class="mobile-only"><a href="#">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#portfolio">Work</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="notes.html">Notes</a></li>
@@ -79,140 +79,54 @@
   <!-- Main section -->
   <div id="main">
     <div class="text-container">
+      <p class="hero-eyebrow">Tokyo, Japan</p>
       <h1>Rossella Ferrandino</h1>
-      <h2>Software Engineer</h2>
-      <hr class="trans_grow" />
-      <a href="https://github.com/RossellaFer" target="_blank" aria-label="Github" rel="noopener"><i
-          class="fab fa-2x fa-github"></i></a>
-      <a href="https://dev.to/rossellafer" target="_blank" aria-label="Dev" rel="noopener"><i
-          class="fab fa-2x fa-dev"></i></a>
-      <a href="https://medium.com/@rferrandino.tokyo" target="_blank" aria-label="Medium" rel="noopener"><i
-          class="fab fa-2x fa-medium"></i></a>
-      <a href="https://www.linkedin.com/in/rossella-ferrandino" target="_blank" aria-label="LinkedIn" rel="noopener"><i
-          class="fab fa-linkedin fa-2x"></i></a>
-      <a href="https://www.behance.net/rossellferrand" target="_blank" aria-label="Twitter" rel="noopener"><i
-          class="fab fa-2x fa-behance"></i></a>
-      <a href="https://twitter.com/ross_ferrandino" target="_blank" aria-label="Twitter" rel="noopener"><i
-          class="fab fa-2x fa-twitter"></i></a>
+      <h2>Frontend Tech Lead &amp; Shopify Engineer</h2>
+      <p class="hero-summary">I build scalable commerce experiences, lead frontend projects, and write about
+        engineering and working in Japan.</p>
+      <div class="hero-actions">
+        <a class="primary-link" href="#portfolio">View past projects</a>
+        <a class="secondary-link" href="notes.html">Read my notes</a>
+      </div>
     </div>
   </div>
 
   <div class="shell">
     <!-- About section -->
     <section id="about" class="wrapper">
+      <h2>About</h2>
       <div class="picture_and_intro">
         <div class="picture_container">
           <img loading="lazy" id="profilepicture" class="img-responsive" alt="profile picture" width="300" height="300"
             src="assets/250919_0001.jpg" />
         </div>
         <div class="about_block">
-          <p class="text_large">Hi 👋 I'm Rossella</p>
-          <p>
-            I’m a Software Engineer specialized in Shopify development, currently based in Tokyo and working as a
-            Frontend Tech Lead at <a class="link" target="_blank" href="https://flagship.cc/en">Flagship LLC</a>.
-            <br>
-            <br>
-            I previously worked at Flagship earlier in my career before co-founding <a class="link" target="_blank"
-              href="https://namastudio.it/en">Nama Studio</a>, a boutique Shopify
-            agency focused on sustainable e-commerce. After several years building and leading projects there, I
-            returned to Flagship in a technical leadership role.
-          </p>
+          <p class="text_large">Hi, I’m Rossella.</p>
+          <p>I’m a software engineer based in Tokyo and a Frontend Tech Lead at <a class="link" target="_blank"
+              rel="noopener" href="https://flagship.cc/en">Flagship LLC</a>. I specialize in Shopify development and
+            building maintainable storefronts that connect customer needs, business goals, and technical systems.</p>
+          <p>Over seven years in web development, I’ve led projects, co-founded the sustainable e-commerce agency <a
+              class="link" target="_blank" rel="noopener" href="https://namastudio.it/en">Nama Studio</a>, and worked
+            across engineering, UX, and performance. My earlier career in marketing still shapes how I translate
+            requirements into practical products.</p>
+          <p>I also contribute to <a class="link" target="_blank" rel="noopener"
+              href="https://womeninsoftware.jp/">Women in Software Engineering Japan</a> and write about technology,
+            leadership, and life between Europe and Japan.</p>
+          <a class="about-interview-link" href="https://flagship.cc/blogs/interview/rossella" target="_blank"
+            rel="noopener">Read my featured interview at Flagship</a>
         </div>
       </div>
-      <div class="about_block about_summary">
-        <p>
-          With 7 years of experience in web development, I focus on building scalable, user-friendly e-commerce experiences that translate business requirements into clean, maintainable systems.
-        </p>
-        <p>
-          At Nama Studio, a 100% women-led agency, I worked across Shopify development, UX design, and high-performing storefronts for ethical and eco-conscious brands. Our work helped businesses grow online while staying aligned with values such as sustainability and accessibility.
-        </p>
-        <p>
-          Before transitioning into software engineering, I worked in marketing and customer retention. While
-          collaborating on the redesign of <a class="link" target="_blank"
-            href="https://www.everymancinema.com/">Everyman Cinema</a>’s loyalty program, I became fascinated by how
-          business requirements translated into technical systems. That curiosity led me to start learning front-end
-          development through communities like <a href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp</a>,
-          <a class="link" target="_blank" href="https://codebar.io">Codebar</a> and <a class="link" target="_blank"
-            href="https://www.womenwhocode.com/">Women Who Code</a>.
-        </p>
-        <p>
-          Alongside my professional work, I’m actively involved in the tech community. I previously co-organized events
-          with Women Who Code and now contribute to <a lass="link" target="_blank"
-            href="https://womeninsoftware.jp/">Women in Software Engineering Japan</a>, supporting initiatives that
-          promote technical excellence and visibility for women in technology.
-        </p>
-        <p>
-          Today, I continue to deepen my expertise in Shopify and modern frontend development, while expanding my skills
-          in React and scalable frontend architecture.
-        </p>
-        <p>
-          I enjoy writing about
-          <a href="/blog.html" class="link">technology</a>, 
-          <a class="link" href="https://nottheusualtourists.com/" target="_blank">travel</a>
-          and life between Europe and Japan.
-        </p>
 
-        <h3>Featured Interview</h3>
-
-        <p>Recently featured by Flagship Inc. to discuss my journey across frontend development, Shopify, leadership, and working between Italy and Japan. <a href="https://flagship.cc/blogs/interview/rossella" target="_blank" class="link">Read the interview.</a></p>
-      </div>
-
-      <div class="about_sub_section">
-        <h2>Skills</h2>
-        <div class="expertise">
-          <div class="about_sub_column">
-            <h3>Engineering</h3>
-            <ul class="skills-list">
-              <li><i class="fas fa-code"></i>JavaScript</li>
-              <li><i class="fas fa-code"></i>React</li>
-              <li><i class="fas fa-code"></i>TypeScript</li>
-              <li><i class="fas fa-code"></i>Tailwind</li>
-              <li><i class="fas fa-code"></i>GraphQL</li>
-              <li><i class="fas fa-code"></i>Node.js</li>
-            </ul>
-          </div>
-          <div class="about_sub_column">
-            <h3>E-commerce</h3>
-            <ul class="skills-list">
-              <li><i class="fa fa-pencil"></i>SEO/GA4/GTM</li>
-              <li><i class="fa fa-pencil"></i>Front-End Performance optimization</li>
-              <li><i class="fa fa-pencil"></i>Responsive design</li>
-              <li><i class="fa fa-pencil"></i>UX research</li>
-              <li><i class="fa fa-pencil"></i>Usability testing</li>
-            </ul>
-          </div>
-          <div class="about_sub_column">
-            <h3>And more</h3>
-            <ul class="skills-list">
-              <li><i class="fa fa-arrow-right"></i>Community Building</li>
-              <li><i class="fa fa-arrow-right"></i>Developer Education</li>
-              <li><i class="fa fa-arrow-right"></i>JLPT N4</li>
-              <li><i class="fa fa-arrow-right"></i>Technical writing</li>
-              <li><i class="fa fa-arrow-right"></i>Public speaking</li>
-              <li>
-                <i class="fa fa-arrow-right"></i>Cross-functional
-                collaboration
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="salutation_and_download">
-          <a class="download_button" target="_blank" href="CV/Rossella Ferrandino CV.pdf">
-            Download my resume<span></span>
-          </a>
-          <p>よろしくお願いしいます！<br />Nice to meet you!</p>
-        </div>
-      </div>
     </section>
 
     <section id="portfolio" class="wrapper">
-      <h2>Portfolio</h2>
+      <h2>Selected Past Work</h2>
       <p class="portfolio_intro">
-        This is a collection of personal projects and open source
-        contributions. <br />
-        To view the professional 20+ Shopify projects I developed at Nama
-        Studio, visit the agency's
-        <a class="link" target="_blank" href="https://namastudio.it/en/pages/portfolio">portfolio</a>.
+        A selection of earlier, publicly shareable Shopify, React, and community projects spanning e-commerce,
+        sustainable development, and open-source work. My current client work is confidential, but you can also
+        explore the <a class="link" target="_blank" rel="noopener"
+          href="https://namastudio.it/en/pages/portfolio">20+ professional Shopify projects</a> I developed at Nama
+        Studio.
       </p>
       <div class="portfolio_container">
         <!--portfolio_box-->
@@ -304,8 +218,13 @@
           </div>
           <!--portfolio_box_description-->
         </div>
-        <!--portfolio_box-->
-        <div class="portfolio_box">
+      </div>
+
+      <details class="more-projects">
+        <summary>Explore earlier and community projects</summary>
+        <div class="portfolio_container portfolio_container_secondary">
+          <!--portfolio_box-->
+          <div class="portfolio_box">
           <h3 class="portfolio_box_title">Wedding website</h3>
           <a href="https://a-wedding-website-demo.netlify.com/" target="_blank">
             <img loading="lazy" class="portfolio_img" alt="Preview image - wedding website"
@@ -390,47 +309,100 @@
               repo</a>.
           </div>
           <!--portfolio_box_description-->
+          </div>
         </div>
-      </div>
+      </details>
       <!--portfolio_container-->
     </section>
     <!-- Portfolio section -->
+
+    <section id="skills" class="wrapper about_sub_section">
+      <h2>Skills</h2>
+      <div class="expertise">
+        <div class="about_sub_column">
+          <h3>Engineering</h3>
+          <ul class="skills-list">
+            <li><i class="fas fa-code"></i>JavaScript</li>
+            <li><i class="fas fa-code"></i>React</li>
+            <li><i class="fas fa-code"></i>TypeScript</li>
+            <li><i class="fas fa-code"></i>Tailwind</li>
+            <li><i class="fas fa-code"></i>GraphQL</li>
+            <li><i class="fas fa-code"></i>Node.js</li>
+          </ul>
+        </div>
+        <div class="about_sub_column">
+          <h3>E-commerce</h3>
+          <ul class="skills-list">
+            <li><i class="fa fa-pencil"></i>SEO/GA4/GTM</li>
+            <li><i class="fa fa-pencil"></i>Front-End performance optimization</li>
+            <li><i class="fa fa-pencil"></i>Responsive design</li>
+            <li><i class="fa fa-pencil"></i>UX research</li>
+            <li><i class="fa fa-pencil"></i>Usability testing</li>
+          </ul>
+        </div>
+        <div class="about_sub_column">
+          <h3>Beyond code</h3>
+          <ul class="skills-list">
+            <li><i class="fa fa-arrow-right"></i>Community building</li>
+            <li><i class="fa fa-arrow-right"></i>Developer education</li>
+            <li><i class="fa fa-arrow-right"></i>JLPT N4</li>
+            <li><i class="fa fa-arrow-right"></i>Technical writing</li>
+            <li><i class="fa fa-arrow-right"></i>Public speaking</li>
+            <li><i class="fa fa-arrow-right"></i>Cross-functional collaboration</li>
+          </ul>
+        </div>
+      </div>
+      <div class="salutation_and_download">
+        <a class="download_button" target="_blank" rel="noopener" href="CV/Rossella Ferrandino CV.pdf">
+          Download my resume<span></span>
+        </a>
+        <p>よろしくお願いします！<br />Nice to meet you!</p>
+      </div>
+    </section>
 
 
     <section id="latest-blogs" class="wrapper">
       <h2>Writing &amp; Notes</h2>
       <p class="text-center">Technical articles, engineering reflections, and monthly notes on working and learning in
         Japan.</p>
-      <div id="latest-blogs-container">
-        <!-- Latest 3 blogs will be injected here -->
-      </div>
-      <div class="writing-links">
-        <a href="blog.html" class="download_button">View all articles<span></span></a>
-        <a href="notes.html" class="download_button">See what I’m up to<span></span></a>
+      <div class="writing-overview">
+        <article class="writing-feature">
+          <p class="writing-kicker">Latest article</p>
+          <div id="latest-blogs-container">
+            <!-- The latest article will be injected here -->
+          </div>
+          <a href="blog.html" class="writing-feature-link">View all articles</a>
+        </article>
+        <article class="writing-feature">
+          <p class="writing-kicker">Latest note</p>
+          <h3>September 2026</h3>
+          <p>A month of high-traffic systems, AI-assisted codebase exploration, Shopify Liquid, and intensive JLPT N3
+            preparation.</p>
+          <a href="notes.html" class="writing-feature-link">Read the September notes</a>
+        </article>
       </div>
     </section>
 
-    <section id="contact" class="container">
-      <h2 class="text-center">Contact</h2>
+    <section id="contact" class="wrapper">
+      <h2 class="text-center">Let’s Connect</h2>
+      <p class="contact-intro">I’m open to conversations about frontend leadership, Shopify engineering, technical
+        writing, mentorship, and the software community in Japan.</p>
       <div class="row contact-section-row">
         <div class="contact-section-column">
-          <h3>You can reach out for:</h3>
+          <h3>Reach out for</h3>
           <ul>
             <li>Job opportunities based in Japan</li>
-            <li>Travel recommendations and tips</li>
             <li>Mentorship or career advice</li>
-            <li>Tech articles collaborations and requests</li>
-            <li>Advice on visiting Japan</li>
-            <li>Italian cooking tips (always happy to share)</li>
+            <li>Technical writing and speaking collaborations</li>
+            <li>Shopify and frontend conversations</li>
           </ul>
         </div>
         <div class="contact-section-column contact_details">
-          <h3>Contact me directly</h3>
+          <h3>Contact me</h3>
           <p>
-            Drop me an
-            <a href="mailto: ross.ferrandino@gmail.com" aria-label="Email" class="link">email</a>
+            <a href="mailto:ross.ferrandino@gmail.com" aria-label="Email Rossella" class="contact-email">Send me an
+              email</a>
           </p>
-          <br />
           <h3>Find me online</h3>
           <div class="socials">
             <a href="https://github.com/RossellaFer" target="_blank" aria-label="Github" rel="noopener"><i
@@ -457,7 +429,7 @@
     </section>
   </div>
   <script src="blogs-data.js?1"></script>
-  <script src="index.js?2" defer></script>
+  <script src="index.js?3" defer></script>
   <!-- 100% privacy-first analytics -->
   <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
   <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt=""
