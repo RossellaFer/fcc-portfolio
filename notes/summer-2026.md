@@ -5,13 +5,20 @@ description: Notes on high-traffic systems, AI-assisted codebase exploration, Sh
 ogDescription: High-traffic systems, AI-assisted codebase exploration, Shopify DotDev, and preparing for JLPT N3.
 label: Monthly note
 permalink: /notes/summer-2026/
-image: /assets/summer-2026.jpg
+image: /assets/Summer 2026 summary.jpg
 imageWidth: 1000
 imageHeight: 667
-imageAlt: A sunflower in summer
+imageAlt: A collection of the places I visited during the summer of 2026, including Niagara Falls, Sicily, and St. Moritz.
 ---
 
-The past couple of weeks have been unusually full of things I wanted to write down. A frustrating JLPT registration sent me down a rabbit hole about high-traffic systems. Starting on a new project made me rethink how I use AI when I’m trying to understand an unfamiliar codebase. And after DotDev, Shopify's annual developer event in Toronto held in July, I finally had time to write about some of the Liquid changes Shopify announced.
+July started with a week in Toronto for DotDev and the events happening around it. 
+It was a pretty intense week of Shopify conversations, catching up with people I already knew  and meeting others from across the ecosystem. Some of those conversations and talks eventually made their way into the Liquid article I wrote for Flagship (and a few more that will be published in the upcoming weeks). I also had a chance to visit Niagara Falls for the first time, which was a nice break from the conference and a chance to see one of the most famous natural wonders in North America.
+
+After Toronto, I spent some time working remotely from Italy, moving between Rome, Milan and Sicily, with a detour to St. Moritz, Switzerland, and taking some actual holidays along the way. It was a nice change of pace from the usual work routine, and I got to enjoy some beautiful scenery, delicious food and of course my family and friends.
+
+By the time I was back in Japan, my attention had shifted quite a bit: a new project at work, more experiments with AI, and the beginning of the slightly stressful but purposeful process of preparing for the JLPT N3 exam.
+
+These past couple of weeks have been providing a lot of learning opportunities. A frustrating JLPT registration sent motivated me to learn more about high-traffic systems. Starting on a new project made me rethink how I use AI when I’m trying to understand an unfamiliar codebase. And after DotDev, I finally had time to write about some of the Liquid changes Shopify announced.
 
 I also started an intensive JLPT N3 prep course on Saturdays, which feels very much like part of the same story: working, learning, and trying to make sense of life as an engineer in Japan.
 
